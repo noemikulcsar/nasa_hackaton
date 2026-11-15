@@ -1,0 +1,47 @@
+{
+  "id": "PROT-DEMO-EQ-01",
+  "title": "Loss of signal from the vital-sign sensor",
+  "version": "0.2-demo",
+  "date": "2026-11-14",
+  "source": "CrewCare team, FICTIONAL document created for the NASA Space Apps 2026 demonstration. Not from a clinical source.",
+  "status": "demo-fictiv",
+  "approval": {
+    "approvedForMission": false,
+    "approvedBy": "—",
+    "note": "FICTIONAL PROTOCOL, NOT APPROVED. Used only to demonstrate the application workflow. Not for medical decisions."
+  },
+  "regions": [
+    "chest"
+  ],
+  "keywords": [
+    "sensor",
+    "signal",
+    "offline",
+    "no data",
+    "grey",
+    "battery",
+    "connection",
+    "manual reading",
+    "pulse",
+    "heart rate"
+  ],
+  "summary": "What the crew does when the vital-sign sensor stops sending data and the readings turn grey.",
+  "sections": [
+    {
+      "id": "1",
+      "heading": "How to recognise it",
+      "body": "Sensor readings are grey with rule R-SENSOR-STALE: the last reading is older than the freshness limit."
+    },
+    {
+      "id": "2",
+      "heading": "Steps (fictional)",
+      "body": "1. Check that the sensor is worn correctly and that its light is on.\n2. Check the battery and replace it if needed.\n3. Pair the sensor with the crew tablet again.\n4. If the signal does not return, measure the pulse manually for 60 seconds and enter it as a manual reading.\n5. Report the failure to the engineering team on the ground."
+    },
+    {
+      "id": "3",
+      "heading": "Important",
+      "body": "Missing data does not mean the person is well. Until the signal returns, decisions rely only on recent manual readings."
+    }
+  ],
+  "medication": null
+}

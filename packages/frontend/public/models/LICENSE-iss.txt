@@ -1,0 +1,17 @@
+Model Information:
+* title:   International Space Station (ISS) (D) (IGOAL)
+* source:  NASA 3D Resources, https://science.nasa.gov/3d-resources/
+           (GitHub mirror: https://github.com/nasa/NASA-3D-Resources)
+* author:  NASA
+
+Usage:
+* NASA 3D Resources models are free to download and use.
+  Follow the NASA Images and Media Usage Guidelines:
+  https://www.nasa.gov/nasa-brand-center/images-and-media/
+* Using NASA material does not imply NASA endorsement of this project.
+
+Changes made for this console:
+* Handrail meshes removed, other meshes decimated (about 2.7M to 0.54M triangles).
+* Textures resized to 1024 px WebP; geometry compressed with EXT_meshopt_compression.
+* Node names are unchanged, so hardware such as Payload_PM, Payload_CMG2 and USLab
+  can be located by name in code.

@@ -1,0 +1,58 @@
+{
+  "id": "PROT-DEMO-CV-01",
+  "title": "High resting heart rate or palpitations: first assessment on board",
+  "version": "0.2-demo",
+  "date": "2026-11-14",
+  "source": "CrewCare team, FICTIONAL document created for the NASA Space Apps 2026 demonstration. Not from a clinical source.",
+  "status": "demo-fictiv",
+  "approval": {
+    "approvedForMission": false,
+    "approvedBy": "—",
+    "note": "FICTIONAL PROTOCOL, NOT APPROVED. Used only to demonstrate the application workflow. Not for medical decisions."
+  },
+  "regions": [
+    "chest",
+    "head"
+  ],
+  "keywords": [
+    "heart rate",
+    "pulse",
+    "palpitations",
+    "heart",
+    "tachycardia",
+    "bpm",
+    "dizziness",
+    "chest",
+    "rest",
+    "cardiovascular"
+  ],
+  "summary": "Documentation and escalation steps when the resting heart rate departs from the personal history or palpitations are reported.",
+  "sections": [
+    {
+      "id": "1",
+      "heading": "Purpose",
+      "body": "Standardises documentation and escalation to the crew medical officer (CMO) when the console flags a heart-rate deviation or a crew member reports palpitations."
+    },
+    {
+      "id": "2",
+      "heading": "When it applies",
+      "body": "• Rule R-HR-PERSONAL-DEVIATION is active for the Chest region.\n• OR the crew member reports palpitations, dizziness or chest discomfort."
+    },
+    {
+      "id": "3",
+      "heading": "Crew steps (fictional)",
+      "body": "1. Stop the current activity; the crew member rests in a safe position.\n2. Check the position and contact of the vital-sign sensor.\n3. After 5 minutes of rest, repeat the reading and record it in the console (activity: rest).\n4. Record the symptoms exactly as the affected person describes them.\n5. Select “Request the medical officer”.\n6. Do not leave the person alone until the CMO takes over."
+    },
+    {
+      "id": "4",
+      "heading": "Escalation (fictional)",
+      "body": "The CMO assesses the situation and decides whether to contact the flight surgeon on the ground. If the person loses consciousness or has difficulty breathing, follow the mission emergency procedure (outside this demo document)."
+    },
+    {
+      "id": "5",
+      "heading": "Documentation",
+      "body": "Record every observation in the incident timeline, with author and time. The timeline is sent to the ground team at the next communication window."
+    }
+  ],
+  "medication": null
+}

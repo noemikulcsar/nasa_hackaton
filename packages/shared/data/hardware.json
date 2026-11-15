@@ -1,0 +1,270 @@
+{
+  "meta": {
+    "vehicle": "International Space Station",
+    "notice": "Component names and locations follow the real ISS. Readings, limits and fault scenarios are synthetic demo values."
+  },
+  "systems": [
+    { "id": "power", "label": "Electrical power" },
+    { "id": "thermal", "label": "Thermal control" },
+    { "id": "eclss", "label": "Life support" },
+    { "id": "gnc", "label": "Attitude control" },
+    { "id": "structure", "label": "Pressure and structure" }
+  ],
+  "components": [
+    {
+      "id": "pumpModule",
+      "keywords": ["pump", "ammonia", "thermal"],
+      "name": "External thermal pump module, loop A",
+      "short": "Pump module",
+      "system": "thermal",
+      "node": "Payload_PM",
+      "location": "S1 truss, external",
+      "description": "Circulates ammonia through the external radiators. A failing pump cuts cooling to half the station's electronics.",
+      "readings": [
+        { "id": "outletPressure", "label": "Pump outlet pressure", "unit": "kPa", "value": 301, "decimals": 0,
+          "limits": { "nominal": [330, 390], "caution": [310, 410], "warning": [280, 430] },
+          "drift": -0.22, "noise": 1.2, "floor": 262, "ceiling": 400 },
+        { "id": "ammoniaFlow", "label": "Ammonia flow", "unit": "kg/h", "value": 2510, "decimals": 0,
+          "limits": { "nominal": [2700, 3100], "caution": [2550, 3250], "warning": [2300, 3400] },
+          "drift": -1.4, "noise": 12, "floor": 2200, "ceiling": 3000 },
+        { "id": "motorCurrent", "label": "Pump motor current", "unit": "A", "value": 2.84, "decimals": 2,
+          "limits": { "nominal": [1.9, 2.6], "caution": [1.8, 2.75], "warning": [1.6, 3.0] },
+          "drift": 0.002, "noise": 0.02, "floor": 2.0, "ceiling": 3.2 }
+      ],
+      "task": {
+        "type": "EVA",
+        "title": "Replace the pump module (spacewalk)",
+        "durationHours": 6.5,
+        "load": 5,
+        "skills": { "eva": 3, "thermal": 2, "mechanical": 2 },
+        "steps": [
+          "Power down loop A and vent ammonia lines through the quick-disconnects.",
+          "Two crew exit through the Quest airlock; one more crew member supports from inside.",
+          "Unbolt the failed module, install the spare from external stowage, reconnect the fluid lines.",
+          "Repressurize loop A and verify flow and pressure from inside."
+        ]
+      }
+    },
+    {
+      "id": "cdra",
+      "keywords": ["scrubber", "cdra", "co2", "co₂"],
+      "name": "Carbon dioxide removal assembly",
+      "short": "CO₂ scrubber",
+      "system": "eclss",
+      "node": "USLab",
+      "location": "Destiny laboratory, internal rack",
+      "description": "Scrubs CO₂ from cabin air. Elevated CO₂ is linked to headaches and reduced concentration, so check crew symptoms while it is degraded.",
+      "healthNote": "Ask the crew about headaches; CO₂ above 4 mmHg can cause them.",
+      "readings": [
+        { "id": "ppco2", "label": "Cabin CO₂ partial pressure", "unit": "mmHg", "value": 3.6, "decimals": 1,
+          "limits": { "nominal": [0, 3.0], "caution": [0, 3.5], "warning": [0, 4.5] },
+          "drift": 0.004, "noise": 0.04, "floor": 2.0, "ceiling": 4.3 },
+        { "id": "bedTemp", "label": "Desiccant bed temperature", "unit": "°C", "value": 196, "decimals": 0,
+          "limits": { "nominal": [190, 210], "caution": [180, 220], "warning": [165, 235] },
+          "drift": 0, "noise": 1.5, "floor": 180, "ceiling": 215 },
+        { "id": "valveCycles", "label": "Selector valve faults today", "unit": "", "value": 3, "decimals": 0,
+          "limits": { "nominal": [0, 0], "caution": [0, 2], "warning": [0, 5] },
+          "drift": 0, "noise": 0, "floor": 0, "ceiling": 9 }
+      ],
+      "task": {
+        "type": "IVA",
+        "title": "Swap the selector valve inside Destiny",
+        "durationHours": 3.5,
+        "load": 2,
+        "skills": { "lifeSupport": 3, "mechanical": 2 },
+        "steps": [
+          "Switch CO₂ removal to the backup scrubber in Tranquility.",
+          "Pull the CDRA drawer out of its rack and isolate the air lines.",
+          "Replace the selector valve and run a leak check.",
+          "Return CDRA to service and watch cabin CO₂ for one full cycle."
+        ]
+      }
+    },
+    {
+      "id": "bcdu",
+      "keywords": ["battery", "bcdu"],
+      "name": "Battery charge and discharge unit 4A",
+      "short": "Battery unit",
+      "system": "power",
+      "node": "Payload_BCDU4",
+      "location": "P4 truss, external",
+      "description": "Charges the station batteries in sunlight and feeds power during the night side of each orbit.",
+      "readings": [
+        { "id": "converterTemp", "label": "Converter temperature", "unit": "°C", "value": 46, "decimals": 0,
+          "limits": { "nominal": [-10, 40], "caution": [-15, 45], "warning": [-20, 55] },
+          "drift": 0.01, "noise": 0.4, "floor": 38, "ceiling": 53 },
+        { "id": "soc", "label": "Battery charge at night-side entry", "unit": "%", "value": 71, "decimals": 0,
+          "limits": { "nominal": [75, 100], "caution": [65, 100], "warning": [50, 100] },
+          "drift": -0.01, "noise": 0.5, "floor": 62, "ceiling": 90 },
+        { "id": "busVoltage", "label": "Output bus voltage", "unit": "V", "value": 152.4, "decimals": 1,
+          "limits": { "nominal": [151, 162], "caution": [148, 164], "warning": [144, 168] },
+          "drift": 0, "noise": 0.3, "floor": 149, "ceiling": 160 }
+      ],
+      "task": {
+        "type": "Robotics",
+        "title": "Swap the unit with Canadarm2 and Dextre",
+        "durationHours": 4,
+        "load": 1,
+        "skills": { "robotics": 3, "electrical": 2 },
+        "steps": [
+          "Move the power load to channel 2B and safe channel 4A.",
+          "Drive Canadarm2 to the P4 truss with Dextre on the end.",
+          "Dextre unbolts the unit and installs the spare from the logistics carrier.",
+          "Reconnect channel 4A and watch one full charge cycle."
+        ]
+      }
+    },
+    {
+      "id": "cmg2",
+      "keywords": ["gyro", "cmg"],
+      "name": "Control moment gyroscope 2",
+      "short": "Gyroscope 2",
+      "system": "gnc",
+      "node": "Payload_CMG2",
+      "location": "Z1 truss, external",
+      "description": "One of four spinning wheels that point the station without using fuel. Bearing wear shows up as vibration first.",
+      "readings": [
+        { "id": "vibration", "label": "Bearing vibration", "unit": "g", "value": 0.31, "decimals": 2,
+          "limits": { "nominal": [0, 0.25], "caution": [0, 0.4], "warning": [0, 0.6] },
+          "drift": 0.0004, "noise": 0.006, "floor": 0.2, "ceiling": 0.5 },
+        { "id": "wheelSpeed", "label": "Wheel speed", "unit": "rpm", "value": 6600, "decimals": 0,
+          "limits": { "nominal": [6550, 6650], "caution": [6450, 6750], "warning": [6300, 6900] },
+          "drift": 0, "noise": 6, "floor": 6560, "ceiling": 6640 },
+        { "id": "spinCurrent", "label": "Spin motor current", "unit": "A", "value": 1.12, "decimals": 2,
+          "limits": { "nominal": [0, 1.1], "caution": [0, 1.3], "warning": [0, 1.6] },
+          "drift": 0.0002, "noise": 0.01, "floor": 1.0, "ceiling": 1.4 }
+      ],
+      "task": {
+        "type": "EVA",
+        "title": "Replace the gyroscope (spacewalk, can be planned)",
+        "durationHours": 7,
+        "load": 5,
+        "skills": { "eva": 3, "mechanical": 3, "robotics": 1 },
+        "steps": [
+          "Spin down CMG 2 and hand attitude control to the remaining three gyroscopes.",
+          "Two crew exit; Canadarm2 brings the spare to the Z1 truss.",
+          "Unbolt the 270 kg unit, swap it, and reconnect power and data.",
+          "Spin up and check vibration from inside."
+        ]
+      }
+    },
+    {
+      "id": "leak",
+      "keywords": ["leak", "zvezda", "prk"],
+      "name": "PrK tunnel slow air leak",
+      "short": "Air leak",
+      "system": "structure",
+      "node": "Zvezda_SM",
+      "location": "Zvezda service module, aft transfer tunnel",
+      "description": "Small cracks in Zvezda's aft tunnel let air escape slowly. The hatch is kept closed when no one is working there.",
+      "readings": [
+        { "id": "decay", "label": "Pressure loss rate", "unit": "kPa/day", "value": 0.11, "decimals": 2,
+          "limits": { "nominal": [0, 0.05], "caution": [0, 0.15], "warning": [0, 0.3] },
+          "drift": 0.0001, "noise": 0.004, "floor": 0.08, "ceiling": 0.2 },
+        { "id": "cabinPressure", "label": "Cabin pressure", "unit": "kPa", "value": 100.6, "decimals": 1,
+          "limits": { "nominal": [99.9, 102.7], "caution": [99.0, 103.4], "warning": [97.9, 104.0] },
+          "drift": 0, "noise": 0.05, "floor": 100.2, "ceiling": 101.4 }
+      ],
+      "task": {
+        "type": "IVA",
+        "title": "Find and seal the leak inside Zvezda",
+        "durationHours": 2.5,
+        "load": 2,
+        "skills": { "lifeSupport": 2, "mechanical": 2 },
+        "steps": [
+          "Close the PrK hatch and log the pressure drop over 4 hours.",
+          "Sweep the tunnel walls with the ultrasonic leak detector.",
+          "Apply sealant patches to the cracks you find.",
+          "Repeat the pressure check after 24 hours."
+        ]
+      }
+    },
+    {
+      "id": "solarArray",
+      "keywords": ["solar", "array"],
+      "name": "Solar array 1A with iROSA",
+      "short": "Solar array 1A",
+      "system": "power",
+      "node": "IROSA_Deployed_S41A",
+      "location": "S4 truss, starboard",
+      "description": "One of the main solar wings, upgraded with a roll-out array. Lower output can mean shading, a string fault, or debris damage.",
+      "readings": [
+        { "id": "output", "label": "Power output", "unit": "kW", "value": 26.8, "decimals": 1,
+          "limits": { "nominal": [28, 34], "caution": [25, 36], "warning": [20, 38] },
+          "drift": 0, "noise": 0.2, "floor": 25.5, "ceiling": 28 },
+        { "id": "stringMismatch", "label": "String current mismatch", "unit": "%", "value": 5.2, "decimals": 1,
+          "limits": { "nominal": [0, 4], "caution": [0, 8], "warning": [0, 15] },
+          "drift": 0, "noise": 0.1, "floor": 4.5, "ceiling": 6 }
+      ],
+      "task": {
+        "type": "Robotics",
+        "title": "Camera survey with Canadarm2",
+        "durationHours": 1.5,
+        "load": 1,
+        "skills": { "robotics": 3, "electrical": 1 },
+        "steps": [
+          "Drive Canadarm2 so its end camera faces the 1A wing.",
+          "Image the whole wing in sunlight and look for damaged cells.",
+          "Downlink the images to the ground power team."
+        ]
+      }
+    },
+    {
+      "id": "mbsu",
+      "keywords": ["mbsu", "power switch", "bus"],
+      "name": "Main bus switching unit 1",
+      "short": "Main power switch",
+      "system": "power",
+      "node": "Payload_MBSU",
+      "location": "S0 truss, external",
+      "description": "Routes power from the solar arrays to the station's main power channels.",
+      "readings": [
+        { "id": "busVoltage", "label": "Primary bus voltage", "unit": "V", "value": 159.2, "decimals": 1,
+          "limits": { "nominal": [151, 162], "caution": [148, 164], "warning": [144, 168] },
+          "drift": 0, "noise": 0.3, "floor": 157, "ceiling": 161 },
+        { "id": "baseplateTemp", "label": "Baseplate temperature", "unit": "°C", "value": 21, "decimals": 0,
+          "limits": { "nominal": [-10, 40], "caution": [-15, 45], "warning": [-20, 55] },
+          "drift": 0, "noise": 0.4, "floor": 18, "ceiling": 24 }
+      ],
+      "task": null
+    },
+    {
+      "id": "cupola",
+      "keywords": ["cupola", "window"],
+      "name": "Cupola window panes",
+      "short": "Cupola",
+      "system": "structure",
+      "node": "Cupola",
+      "location": "Tranquility node, Earth-facing port",
+      "description": "Seven-window observation module. Each pane has redundant glass layers and an external shutter.",
+      "readings": [
+        { "id": "paneDelta", "label": "Window 7 pressure difference", "unit": "kPa", "value": 101.1, "decimals": 1,
+          "limits": { "nominal": [99.9, 102.7], "caution": [99.0, 103.4], "warning": [97.9, 104.0] },
+          "drift": 0, "noise": 0.05, "floor": 100.8, "ceiling": 101.4 },
+        { "id": "shutters", "label": "Shutters closed", "unit": "of 7", "value": 7, "decimals": 0,
+          "limits": { "nominal": [0, 7], "caution": [0, 7], "warning": [0, 7] },
+          "drift": 0, "noise": 0, "floor": 7, "ceiling": 7 }
+      ],
+      "task": null
+    },
+    {
+      "id": "canadarm",
+      "keywords": ["canadarm", "robotic arm"],
+      "name": "Canadarm2 robotic arm",
+      "short": "Canadarm2",
+      "system": "structure",
+      "node": "SSRMS_Base",
+      "location": "Mobile base system, main truss",
+      "description": "The station's 17-metre robotic arm, used to move hardware, dock cargo ships and support spacewalks.",
+      "readings": [
+        { "id": "jointTemp", "label": "Shoulder joint temperature", "unit": "°C", "value": 18, "decimals": 0,
+          "limits": { "nominal": [-30, 50], "caution": [-40, 60], "warning": [-50, 70] },
+          "drift": 0, "noise": 0.5, "floor": 14, "ceiling": 22 },
+        { "id": "brakeTests", "label": "Brake tests passed", "unit": "of 7", "value": 7, "decimals": 0,
+          "limits": { "nominal": [7, 7], "caution": [6, 7], "warning": [5, 7] },
+          "drift": 0, "noise": 0, "floor": 7, "ceiling": 7 }
+      ],
+      "task": null
+    }
+  ]
+}

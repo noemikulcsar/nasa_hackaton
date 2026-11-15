@@ -1,0 +1,47 @@
+{
+  "id": "PROT-DEMO-MSK-01",
+  "title": "Exercise below plan or musculoskeletal pain",
+  "version": "0.2-demo",
+  "date": "2026-11-14",
+  "source": "CrewCare team, FICTIONAL document created for the NASA Space Apps 2026 demonstration. Not from a clinical source.",
+  "status": "demo-fictiv",
+  "approval": {
+    "approvedForMission": false,
+    "approvedBy": "—",
+    "note": "FICTIONAL PROTOCOL, NOT APPROVED. Used only to demonstrate the application workflow. Not for medical decisions."
+  },
+  "regions": [
+    "arms",
+    "legs",
+    "pelvis",
+    "hands"
+  ],
+  "keywords": [
+    "exercise",
+    "workout",
+    "muscle",
+    "bone",
+    "pain",
+    "back",
+    "lumbar",
+    "arms",
+    "legs",
+    "cycle",
+    "ared",
+    "grip"
+  ],
+  "summary": "Documenting reasons for reduced exercise and reporting musculoskeletal pain.",
+  "sections": [
+    {
+      "id": "1",
+      "heading": "When it applies",
+      "body": "Rule R-EXERCISE-BELOW-USUAL is active, or pain in the back, arms or legs is reported."
+    },
+    {
+      "id": "2",
+      "heading": "Steps (fictional)",
+      "body": "1. Record the reason for less exercise (pain, schedule, equipment).\n2. Record where and when the pain started.\n3. Do not resume heavy-load exercise until the CMO has reviewed it.\n4. The CMO may ask the ground team for an adapted exercise plan."
+    }
+  ],
+  "medication": null
+}

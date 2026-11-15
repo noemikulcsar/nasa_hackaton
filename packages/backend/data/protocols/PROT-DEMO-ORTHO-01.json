@@ -1,0 +1,42 @@
+{
+  "id": "PROT-DEMO-ORTHO-01",
+  "title": "Lightheadedness when standing up",
+  "version": "0.2-demo",
+  "date": "2026-11-14",
+  "source": "CrewCare team, FICTIONAL document created for the NASA Space Apps 2026 demonstration. Not from a clinical source.",
+  "status": "demo-fictiv",
+  "approval": {
+    "approvedForMission": false,
+    "approvedBy": "—",
+    "note": "FICTIONAL PROTOCOL, NOT APPROVED. Used only to demonstrate the application workflow. Not for medical decisions."
+  },
+  "regions": [
+    "feet",
+    "legs",
+    "chest",
+    "head"
+  ],
+  "keywords": [
+    "dizziness",
+    "lightheaded",
+    "standing",
+    "orthostatic",
+    "blood pressure",
+    "fluids",
+    "feet"
+  ],
+  "summary": "Recording episodes of lightheadedness on standing and reducing the risk of falls or injury.",
+  "sections": [
+    {
+      "id": "1",
+      "heading": "When it applies",
+      "body": "Standing tolerance is reduced or poor, systolic pressure is below 90 mmHg, or the crew member reports lightheadedness on standing."
+    },
+    {
+      "id": "2",
+      "heading": "Crew steps (fictional)",
+      "body": "1. Change position slowly and hold a handrail.\n2. Record when the episode happened and how long it lasted.\n3. Take a manual blood-pressure reading at rest and enter it in the console.\n4. Log fluid intake for the day.\n5. Tell the CMO before any strenuous task or spacewalk preparation."
+    }
+  ],
+  "medication": null
+}

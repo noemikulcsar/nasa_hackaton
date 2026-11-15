@@ -1,0 +1,33 @@
+{
+  "name": "orbital-health-console",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Orbital Health Console: crew health monitoring for space missions (NASA Space Apps 2026). Monorepo: shared domain package, Node API, React interface.",
+  "workspaces": [
+    "packages/shared",
+    "packages/backend",
+    "packages/frontend"
+  ],
+  "scripts": {
+    "dev": "concurrently -k -n api,web -c cyan,magenta \"npm run dev -w @orbital/backend\" \"npm run dev -w @orbital/frontend\"",
+    "build": "npm run build -w @orbital/frontend",
+    "start": "npm run start -w @orbital/backend",
+    "reset": "npm run reset -w @orbital/backend",
+    "data:labs": "npm run data:labs -w @orbital/backend",
+    "ai:status": "npm run ai:status -w @orbital/backend",
+    "test": "npm test -w @orbital/backend",
+    "test:e2e": "playwright test",
+    "typecheck": "npm run typecheck --workspaces --if-present"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.65.1",
+    "concurrently": "^10.0.7",
+    "cross-env": "^10.1.0",
+    "typescript": "^7.0.2",
+    "@types/node": "^26.6.6"
+  },
+  "engines": {
+    "node": ">=20.6"
+  }
+}

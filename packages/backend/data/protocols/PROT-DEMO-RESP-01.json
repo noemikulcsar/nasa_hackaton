@@ -1,0 +1,44 @@
+{
+  "id": "PROT-DEMO-RESP-01",
+  "title": "Low blood oxygen (SpO₂) reading",
+  "version": "0.2-demo",
+  "date": "2026-11-14",
+  "source": "CrewCare team, FICTIONAL document created for the NASA Space Apps 2026 demonstration. Not from a clinical source.",
+  "status": "demo-fictiv",
+  "approval": {
+    "approvedForMission": false,
+    "approvedBy": "—",
+    "note": "FICTIONAL PROTOCOL, NOT APPROVED. Used only to demonstrate the application workflow. Not for medical decisions."
+  },
+  "regions": [
+    "chest"
+  ],
+  "keywords": [
+    "oxygen",
+    "spo2",
+    "blood oxygen",
+    "breathing",
+    "saturation",
+    "breathless",
+    "co2"
+  ],
+  "summary": "What the crew records and who it calls when SpO₂ falls below the normal band.",
+  "sections": [
+    {
+      "id": "1",
+      "heading": "When it applies",
+      "body": "Rule R-LIMIT-SPO2 is active (SpO₂ below 95 %), or the crew member reports breathlessness."
+    },
+    {
+      "id": "2",
+      "heading": "Crew steps (fictional)",
+      "body": "1. Check that the finger sensor is fitted correctly and the hand is warm.\n2. Repeat the reading at rest after 2 minutes and record it.\n3. Ask about breathlessness, headache or confusion and record the answers.\n4. Check the cabin CO₂ reading on the Station systems page.\n5. Select “Request the medical officer” if the value stays below 93 %."
+    },
+    {
+      "id": "3",
+      "heading": "Escalation (fictional)",
+      "body": "The CMO decides on any treatment using the approved mission protocol and the flight surgeon. This demo document contains no treatment instructions."
+    }
+  ],
+  "medication": null
+}

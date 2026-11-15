@@ -1,0 +1,7 @@
+node_modules/
+dist/
+packages/backend/var/
+.e2e-data/
+test-results/
+playwright-report/
+.env

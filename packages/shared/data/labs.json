@@ -1,0 +1,4706 @@
+{
+ "source": {
+  "repository": "NASA Open Science Data Repository (OSDR)",
+  "study": "OSD-575 – SpaceX Inspiration4 Blood Serum Metabolic Panel and Immune/Cardiac Cytokine Arrays",
+  "mission": "SpaceX Inspiration4 (September 2021, 3 days in low Earth orbit, 4 civilian crew)",
+  "files": [
+   "LSDS-8_Comprehensive_Metabolic_Panel_CMP.upload_SUBMITTED.csv",
+   "LSDS-8_Multiplex_serum_cardiovascular_EvePanel_TRANSFORMED.csv"
+  ],
+  "url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-575",
+  "note": "Real, anonymised data (C001–C004). In the console they are attributed to fictional crew profiles for the demonstration."
+ },
+ "timepoints": [
+  {
+   "id": "L-92",
+   "phase": "pre",
+   "days": -92,
+   "label": "Pre-flight, L-92"
+  },
+  {
+   "id": "L-44",
+   "phase": "pre",
+   "days": -44,
+   "label": "Pre-flight, L-44"
+  },
+  {
+   "id": "L-3",
+   "phase": "pre",
+   "days": -3,
+   "label": "Pre-flight, L-3"
+  },
+  {
+   "id": "R+1",
+   "phase": "post",
+   "days": 1,
+   "label": "Post-flight, R+1"
+  },
+  {
+   "id": "R+45",
+   "phase": "post",
+   "days": 45,
+   "label": "Post-flight, R+45"
+  },
+  {
+   "id": "R+82",
+   "phase": "post",
+   "days": 82,
+   "label": "Post-flight, R+82"
+  },
+  {
+   "id": "R+194",
+   "phase": "post",
+   "days": 194,
+   "label": "Post-flight, R+194"
+  }
+ ],
+ "analytes": [
+  {
+   "key": "glucose",
+   "name": "Glucose",
+   "region": "pelvis",
+   "system": "Metabolism",
+   "unit": "mg/dL",
+   "panel": "CMP (Quest Diagnostics)",
+   "hasRange": true
+  },
+  {
+   "key": "bun",
+   "name": "Urea nitrogen (BUN)",
+   "region": "pelvis",
+   "system": "Kidney",
+   "unit": "mg/dL",
+   "panel": "CMP (Quest Diagnostics)",
+   "hasRange": true
+  },
+  {
+   "key": "creatinine",
+   "name": "Creatinine",
+   "region": "pelvis",
+   "system": "Kidney",
+   "unit": "mg/dL",
+   "panel": "CMP (Quest Diagnostics)",
+   "hasRange": true
+  },
+  {
+   "key": "egfr",
+   "name": "Estimated GFR",
+   "region": "pelvis",
+   "system": "Kidney",
+   "unit": "mL/min/1.73m2",
+   "panel": "CMP (Quest Diagnostics)",
+   "hasRange": true
+  },
+  {
+   "key": "sodium",
+   "name": "Sodium",
+   "region": "pelvis",
+   "system": "Electrolytes",
+   "unit": "mmol/L",
+   "panel": "CMP (Quest Diagnostics)",
+   "hasRange": true
+  },
+  {
+   "key": "potassium",
+   "name": "Potassium",
+   "region": "pelvis",
+   "system": "Electrolytes",
+   "unit": "mmol/L",
+   "panel": "CMP (Quest Diagnostics)",
+   "hasRange": true
+  },
+  {
+   "key": "chloride",
+   "name": "Chloride",
+   "region": "pelvis",
+   "system": "Electrolytes",
+   "unit": "mmol/L",
+   "panel": "CMP (Quest Diagnostics)",
+   "hasRange": true
+  },
+  {
+   "key": "co2",
+   "name": "Bicarbonate (total CO₂)",
+   "region": "pelvis",
+   "system": "Electrolytes",
+   "unit": "mmol/L",
+   "panel": "CMP (Quest Diagnostics)",
+   "hasRange": true
+  },
+  {
+   "key": "calcium",
+   "name": "Calcium",
+   "region": "pelvis",
+   "system": "Bone",
+   "unit": "mg/dL",
+   "panel": "CMP (Quest Diagnostics)",
+   "hasRange": true
+  },
+  {
+   "key": "protein",
+   "name": "Total protein",
+   "region": "pelvis",
+   "system": "Liver and protein",
+   "unit": "g/dL",
+   "panel": "CMP (Quest Diagnostics)",
+   "hasRange": true
+  },
+  {
+   "key": "albumin",
+   "name": "Albumin",
+   "region": "pelvis",
+   "system": "Liver and protein",
+   "unit": "g/dL",
+   "panel": "CMP (Quest Diagnostics)",
+   "hasRange": true
+  },
+  {
+   "key": "globulin",
+   "name": "Globulin",
+   "region": "pelvis",
+   "system": "Liver and protein",
+   "unit": "g/dL",
+   "panel": "CMP (Quest Diagnostics)",
+   "hasRange": true
+  },
+  {
+   "key": "bilirubin",
+   "name": "Total bilirubin",
+   "region": "pelvis",
+   "system": "Liver and protein",
+   "unit": "mg/dL",
+   "panel": "CMP (Quest Diagnostics)",
+   "hasRange": true
+  },
+  {
+   "key": "alp",
+   "name": "Alkaline phosphatase",
+   "region": "pelvis",
+   "system": "Bone (and liver)",
+   "unit": "U/L",
+   "panel": "CMP (Quest Diagnostics)",
+   "hasRange": true
+  },
+  {
+   "key": "ast",
+   "name": "AST",
+   "region": "pelvis",
+   "system": "Liver and protein",
+   "unit": "U/L",
+   "panel": "CMP (Quest Diagnostics)",
+   "hasRange": true
+  },
+  {
+   "key": "alt",
+   "name": "ALT",
+   "region": "pelvis",
+   "system": "Liver and protein",
+   "unit": "U/L",
+   "panel": "CMP (Quest Diagnostics)",
+   "hasRange": true
+  },
+  {
+   "key": "cv_a2_macroglobulin",
+   "name": "Alpha-2 macroglobulin",
+   "unit": "ng/mL",
+   "region": "chest",
+   "system": "Inflammation and clotting",
+   "panel": "Eve cardiovascular panel HDCVD9",
+   "hasRange": false
+  },
+  {
+   "key": "cv_agp",
+   "name": "Alpha-1 acid glycoprotein (AGP)",
+   "unit": "ng/mL",
+   "region": "chest",
+   "system": "Inflammation and clotting",
+   "panel": "Eve cardiovascular panel HDCVD9",
+   "hasRange": false
+  },
+  {
+   "key": "cv_crp",
+   "name": "C-reactive protein (CRP)",
+   "unit": "pg/mL",
+   "region": "chest",
+   "system": "Inflammation and clotting",
+   "panel": "Eve cardiovascular panel HDCVD9",
+   "hasRange": false
+  },
+  {
+   "key": "cv_fetuin_a36",
+   "name": "Fetuin-A",
+   "unit": "ng/mL",
+   "region": "chest",
+   "system": "Inflammation and clotting",
+   "panel": "Eve cardiovascular panel HDCVD9",
+   "hasRange": false
+  },
+  {
+   "key": "cv_fibrinogen",
+   "name": "Fibrinogen",
+   "unit": "ng/mL",
+   "region": "chest",
+   "system": "Inflammation and clotting",
+   "panel": "Eve cardiovascular panel HDCVD9",
+   "hasRange": false
+  },
+  {
+   "key": "cv_haptoglobin",
+   "name": "Haptoglobin",
+   "unit": "ng/mL",
+   "region": "chest",
+   "system": "Inflammation and clotting",
+   "panel": "Eve cardiovascular panel HDCVD9",
+   "hasRange": false
+  },
+  {
+   "key": "cv_l_selectin",
+   "name": "L-selectin",
+   "unit": "pg/mL",
+   "region": "chest",
+   "system": "Inflammation and clotting",
+   "panel": "Eve cardiovascular panel HDCVD9",
+   "hasRange": false
+  },
+  {
+   "key": "cv_pf4",
+   "name": "Platelet factor 4 (PF4)",
+   "unit": "ng/mL",
+   "region": "chest",
+   "system": "Inflammation and clotting",
+   "panel": "Eve cardiovascular panel HDCVD9",
+   "hasRange": false
+  },
+  {
+   "key": "cv_sap",
+   "name": "Serum amyloid P (SAP)",
+   "unit": "pg/mL",
+   "region": "chest",
+   "system": "Inflammation and clotting",
+   "panel": "Eve cardiovascular panel HDCVD9",
+   "hasRange": false
+  }
+ ],
+ "subjects": {
+  "C001": {
+   "sex": "M",
+   "results": {
+    "glucose": [
+     {
+      "tp": "L-92",
+      "value": 83,
+      "min": 65,
+      "max": 99
+     },
+     {
+      "tp": "L-44",
+      "value": 80,
+      "min": 65,
+      "max": 99
+     },
+     {
+      "tp": "L-3",
+      "value": 69,
+      "min": 65,
+      "max": 99
+     },
+     {
+      "tp": "R+1",
+      "value": 90,
+      "min": 65,
+      "max": 99
+     },
+     {
+      "tp": "R+45",
+      "value": 84,
+      "min": 65,
+      "max": 99
+     },
+     {
+      "tp": "R+82",
+      "value": 91,
+      "min": 65,
+      "max": 99
+     },
+     {
+      "tp": "R+194",
+      "value": 87,
+      "min": 65,
+      "max": 99
+     }
+    ],
+    "bun": [
+     {
+      "tp": "L-92",
+      "value": 25,
+      "min": 7,
+      "max": 25
+     },
+     {
+      "tp": "L-44",
+      "value": 19,
+      "min": 7,
+      "max": 25
+     },
+     {
+      "tp": "L-3",
+      "value": 20,
+      "min": 7,
+      "max": 25
+     },
+     {
+      "tp": "R+1",
+      "value": 18,
+      "min": 7,
+      "max": 25
+     },
+     {
+      "tp": "R+45",
+      "value": 15,
+      "min": 7,
+      "max": 25
+     },
+     {
+      "tp": "R+82",
+      "value": 22,
+      "min": 7,
+      "max": 25
+     },
+     {
+      "tp": "R+194",
+      "value": 28,
+      "min": 7,
+      "max": 25
+     }
+    ],
+    "creatinine": [
+     {
+      "tp": "L-92",
+      "value": 1.24,
+      "min": 0.6,
+      "max": 1.35
+     },
+     {
+      "tp": "L-44",
+      "value": 1.1,
+      "min": 0.6,
+      "max": 1.35
+     },
+     {
+      "tp": "L-3",
+      "value": 1.37,
+      "min": 0.6,
+      "max": 1.35
+     },
+     {
+      "tp": "R+1",
+      "value": 1.12,
+      "min": 0.6,
+      "max": 1.35
+     },
+     {
+      "tp": "R+45",
+      "value": 1.11,
+      "min": 0.6,
+      "max": 1.35
+     },
+     {
+      "tp": "R+82",
+      "value": 1.25,
+      "min": 0.6,
+      "max": 1.35
+     },
+     {
+      "tp": "R+194",
+      "value": 1.29,
+      "min": 0.6,
+      "max": 1.35
+     }
+    ],
+    "egfr": [
+     {
+      "tp": "L-92",
+      "value": 73,
+      "min": 60,
+      "max": null
+     },
+     {
+      "tp": "L-44",
+      "value": 85,
+      "min": 60,
+      "max": null
+     },
+     {
+      "tp": "L-3",
+      "value": 65,
+      "min": 60,
+      "max": null
+     },
+     {
+      "tp": "R+1",
+      "value": 83,
+      "min": 60,
+      "max": null
+     },
+     {
+      "tp": "R+45",
+      "value": 84,
+      "min": 60,
+      "max": null
+     },
+     {
+      "tp": "R+82",
+      "value": 73,
+      "min": 60,
+      "max": null
+     },
+     {
+      "tp": "R+194",
+      "value": 69,
+      "min": 60,
+      "max": null
+     }
+    ],
+    "sodium": [
+     {
+      "tp": "L-92",
+      "value": 141,
+      "min": 135,
+      "max": 146
+     },
+     {
+      "tp": "L-44",
+      "value": 139,
+      "min": 135,
+      "max": 146
+     },
+     {
+      "tp": "L-3",
+      "value": 142,
+      "min": 135,
+      "max": 146
+     },
+     {
+      "tp": "R+1",
+      "value": 138,
+      "min": 135,
+      "max": 146
+     },
+     {
+      "tp": "R+45",
+      "value": 138,
+      "min": 135,
+      "max": 146
+     },
+     {
+      "tp": "R+82",
+      "value": 140,
+      "min": 135,
+      "max": 146
+     },
+     {
+      "tp": "R+194",
+      "value": 137,
+      "min": 135,
+      "max": 146
+     }
+    ],
+    "potassium": [
+     {
+      "tp": "L-92",
+      "value": 4.6,
+      "min": 3.5,
+      "max": 5.3
+     },
+     {
+      "tp": "L-44",
+      "value": 4.2,
+      "min": 3.5,
+      "max": 5.3
+     },
+     {
+      "tp": "L-3",
+      "value": 3.9,
+      "min": 3.5,
+      "max": 5.3
+     },
+     {
+      "tp": "R+1",
+      "value": 4.4,
+      "min": 3.5,
+      "max": 5.3
+     },
+     {
+      "tp": "R+45",
+      "value": 4,
+      "min": 3.5,
+      "max": 5.3
+     },
+     {
+      "tp": "R+82",
+      "value": 4.3,
+      "min": 3.5,
+      "max": 5.3
+     },
+     {
+      "tp": "R+194",
+      "value": 4.3,
+      "min": 3.5,
+      "max": 5.3
+     }
+    ],
+    "chloride": [
+     {
+      "tp": "L-92",
+      "value": 104,
+      "min": 98,
+      "max": 110
+     },
+     {
+      "tp": "L-44",
+      "value": 101,
+      "min": 98,
+      "max": 110
+     },
+     {
+      "tp": "L-3",
+      "value": 102,
+      "min": 98,
+      "max": 110
+     },
+     {
+      "tp": "R+1",
+      "value": 102,
+      "min": 98,
+      "max": 110
+     },
+     {
+      "tp": "R+45",
+      "value": 100,
+      "min": 98,
+      "max": 110
+     },
+     {
+      "tp": "R+82",
+      "value": 101,
+      "min": 98,
+      "max": 110
+     },
+     {
+      "tp": "R+194",
+      "value": 102,
+      "min": 98,
+      "max": 110
+     }
+    ],
+    "co2": [
+     {
+      "tp": "L-92",
+      "value": 23,
+      "min": 20,
+      "max": 32
+     },
+     {
+      "tp": "L-44",
+      "value": 26,
+      "min": 20,
+      "max": 32
+     },
+     {
+      "tp": "L-3",
+      "value": 26,
+      "min": 20,
+      "max": 32
+     },
+     {
+      "tp": "R+1",
+      "value": 24,
+      "min": 20,
+      "max": 32
+     },
+     {
+      "tp": "R+45",
+      "value": 28,
+      "min": 20,
+      "max": 32
+     },
+     {
+      "tp": "R+82",
+      "value": 27,
+      "min": 20,
+      "max": 32
+     },
+     {
+      "tp": "R+194",
+      "value": 23,
+      "min": 20,
+      "max": 32
+     }
+    ],
+    "calcium": [
+     {
+      "tp": "L-92",
+      "value": 9.7,
+      "min": 8.6,
+      "max": 10.3
+     },
+     {
+      "tp": "L-44",
+      "value": 10,
+      "min": 8.6,
+      "max": 10.3
+     },
+     {
+      "tp": "L-3",
+      "value": 9.6,
+      "min": 8.6,
+      "max": 10.3
+     },
+     {
+      "tp": "R+1",
+      "value": 9.7,
+      "min": 8.6,
+      "max": 10.3
+     },
+     {
+      "tp": "R+45",
+      "value": 9.6,
+      "min": 8.6,
+      "max": 10.3
+     },
+     {
+      "tp": "R+82",
+      "value": 10.1,
+      "min": 8.6,
+      "max": 10.3
+     },
+     {
+      "tp": "R+194",
+      "value": 9.4,
+      "min": 8.6,
+      "max": 10.3
+     }
+    ],
+    "protein": [
+     {
+      "tp": "L-92",
+      "value": 7.3,
+      "min": 6.1,
+      "max": 8.1
+     },
+     {
+      "tp": "L-44",
+      "value": 7.7,
+      "min": 6.1,
+      "max": 8.1
+     },
+     {
+      "tp": "L-3",
+      "value": 7.4,
+      "min": 6.1,
+      "max": 8.1
+     },
+     {
+      "tp": "R+1",
+      "value": 7.5,
+      "min": 6.1,
+      "max": 8.1
+     },
+     {
+      "tp": "R+45",
+      "value": 7.2,
+      "min": 6.1,
+      "max": 8.1
+     },
+     {
+      "tp": "R+82",
+      "value": 7.8,
+      "min": 6.1,
+      "max": 8.1
+     },
+     {
+      "tp": "R+194",
+      "value": 7,
+      "min": 6.1,
+      "max": 8.1
+     }
+    ],
+    "albumin": [
+     {
+      "tp": "L-92",
+      "value": 5,
+      "min": 3.6,
+      "max": 5.1
+     },
+     {
+      "tp": "L-44",
+      "value": 5,
+      "min": 3.6,
+      "max": 5.1
+     },
+     {
+      "tp": "L-3",
+      "value": 4.9,
+      "min": 3.6,
+      "max": 5.1
+     },
+     {
+      "tp": "R+1",
+      "value": 4.9,
+      "min": 3.6,
+      "max": 5.1
+     },
+     {
+      "tp": "R+45",
+      "value": 4.9,
+      "min": 3.6,
+      "max": 5.1
+     },
+     {
+      "tp": "R+82",
+      "value": 5.1,
+      "min": 3.6,
+      "max": 5.1
+     },
+     {
+      "tp": "R+194",
+      "value": 4.6,
+      "min": 3.6,
+      "max": 5.1
+     }
+    ],
+    "globulin": [
+     {
+      "tp": "L-92",
+      "value": 2.3,
+      "min": 1.9,
+      "max": 3.7
+     },
+     {
+      "tp": "L-44",
+      "value": 2.7,
+      "min": 1.9,
+      "max": 3.7
+     },
+     {
+      "tp": "L-3",
+      "value": 2.5,
+      "min": 1.9,
+      "max": 3.7
+     },
+     {
+      "tp": "R+1",
+      "value": 2.6,
+      "min": 1.9,
+      "max": 3.7
+     },
+     {
+      "tp": "R+45",
+      "value": 2.3,
+      "min": 1.9,
+      "max": 3.7
+     },
+     {
+      "tp": "R+82",
+      "value": 2.7,
+      "min": 1.9,
+      "max": 3.7
+     },
+     {
+      "tp": "R+194",
+      "value": 2.4,
+      "min": 1.9,
+      "max": 3.7
+     }
+    ],
+    "bilirubin": [
+     {
+      "tp": "L-92",
+      "value": 0.7,
+      "min": 0.2,
+      "max": 1.2
+     },
+     {
+      "tp": "L-44",
+      "value": 0.9,
+      "min": 0.2,
+      "max": 1.2
+     },
+     {
+      "tp": "L-3",
+      "value": 1,
+      "min": 0.2,
+      "max": 1.2
+     },
+     {
+      "tp": "R+1",
+      "value": 1.2,
+      "min": 0.2,
+      "max": 1.2
+     },
+     {
+      "tp": "R+45",
+      "value": null,
+      "min": 0.2,
+      "max": 1.2
+     },
+     {
+      "tp": "R+82",
+      "value": 1.2,
+      "min": 0.2,
+      "max": 1.2
+     },
+     {
+      "tp": "R+194",
+      "value": 0.8,
+      "min": 0.2,
+      "max": 1.2
+     }
+    ],
+    "alp": [
+     {
+      "tp": "L-92",
+      "value": 51,
+      "min": 36,
+      "max": 130
+     },
+     {
+      "tp": "L-44",
+      "value": 46,
+      "min": 36,
+      "max": 130
+     },
+     {
+      "tp": "L-3",
+      "value": 45,
+      "min": 36,
+      "max": 130
+     },
+     {
+      "tp": "R+1",
+      "value": 52,
+      "min": 36,
+      "max": 130
+     },
+     {
+      "tp": "R+45",
+      "value": 46,
+      "min": 36,
+      "max": 130
+     },
+     {
+      "tp": "R+82",
+      "value": 49,
+      "min": 36,
+      "max": 130
+     },
+     {
+      "tp": "R+194",
+      "value": 50,
+      "min": 36,
+      "max": 130
+     }
+    ],
+    "ast": [
+     {
+      "tp": "L-92",
+      "value": 15,
+      "min": 10,
+      "max": 40
+     },
+     {
+      "tp": "L-44",
+      "value": 18,
+      "min": 10,
+      "max": 40
+     },
+     {
+      "tp": "L-3",
+      "value": 15,
+      "min": 10,
+      "max": 40
+     },
+     {
+      "tp": "R+1",
+      "value": 16,
+      "min": 10,
+      "max": 40
+     },
+     {
+      "tp": "R+45",
+      "value": 13,
+      "min": 10,
+      "max": 40
+     },
+     {
+      "tp": "R+82",
+      "value": 16,
+      "min": 10,
+      "max": 40
+     },
+     {
+      "tp": "R+194",
+      "value": 12,
+      "min": 10,
+      "max": 40
+     }
+    ],
+    "alt": [
+     {
+      "tp": "L-92",
+      "value": 15,
+      "min": 9,
+      "max": 46
+     },
+     {
+      "tp": "L-44",
+      "value": 16,
+      "min": 9,
+      "max": 46
+     },
+     {
+      "tp": "L-3",
+      "value": 13,
+      "min": 9,
+      "max": 46
+     },
+     {
+      "tp": "R+1",
+      "value": 9,
+      "min": 9,
+      "max": 46
+     },
+     {
+      "tp": "R+45",
+      "value": 11,
+      "min": 9,
+      "max": 46
+     },
+     {
+      "tp": "R+82",
+      "value": 15,
+      "min": 9,
+      "max": 46
+     },
+     {
+      "tp": "R+194",
+      "value": 15,
+      "min": 9,
+      "max": 46
+     }
+    ],
+    "cv_a2_macroglobulin": [
+     {
+      "tp": "L-92",
+      "value": 903742.69,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "L-44",
+      "value": 657943.56,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "L-3",
+      "value": 1002300,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "R+1",
+      "value": 1048700,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "R+45",
+      "value": 1130800,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "R+82",
+      "value": 2993600,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "R+194",
+      "value": 1651200,
+      "min": null,
+      "max": null
+     }
+    ],
+    "cv_agp": [
+     {
+      "tp": "L-92",
+      "value": 1048700,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "L-44",
+      "value": 1745700,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "L-3",
+      "value": 1214100,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "R+1",
+      "value": 1034400,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "R+45",
+      "value": 1285200,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "R+82",
+      "value": 2455500,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "R+194",
+      "value": 2595800,
+      "min": null,
+      "max": null
+     }
+    ],
+    "cv_crp": [
+     {
+      "tp": "L-92",
+      "value": 18385000,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "L-44",
+      "value": 2191000,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "L-3",
+      "value": 5131700,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "R+1",
+      "value": 10637600,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "R+45",
+      "value": 6713900,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "R+82",
+      "value": 25030000,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "R+194",
+      "value": 15415000,
+      "min": null,
+      "max": null
+     }
+    ],
+    "cv_fetuin_a36": [
+     {
+      "tp": "L-92",
+      "value": 144424.41,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "L-44",
+      "value": 194978.74,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "L-3",
+      "value": 155302.07,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "R+1",
+      "value": 163848.05,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "R+45",
+      "value": 159096.21,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "R+82",
+      "value": 300149.84,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "R+194",
+      "value": 273640.25,
+      "min": null,
+      "max": null
+     }
+    ],
+    "cv_fibrinogen": [
+     {
+      "tp": "L-92",
+      "value": 3208.77,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "L-44",
+      "value": 5707.32,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "L-3",
+      "value": 2780.38,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "R+1",
+      "value": 2604.7,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "R+45",
+      "value": 2732.11,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "R+82",
+      "value": 2513.02,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "R+194",
+      "value": 4587.13,
+      "min": null,
+      "max": null
+     }
+    ],
+    "cv_haptoglobin": [
+     {
+      "tp": "L-92",
+      "value": 1049100,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "L-44",
+      "value": 122441.48,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "L-3",
+      "value": 1305900,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "R+1",
+      "value": 853104.4,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "R+45",
+      "value": 1864800,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "R+82",
+      "value": 13593000,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "R+194",
+      "value": 55113000,
+      "min": null,
+      "max": null
+     }
+    ],
+    "cv_l_selectin": [
+     {
+      "tp": "L-92",
+      "value": 515957.2,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "L-44",
+      "value": 675114.37,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "L-3",
+      "value": 561452.93,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "R+1",
+      "value": 596429.89,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "R+45",
+      "value": 568449.05,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "R+82",
+      "value": 1266600,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "R+194",
+      "value": 762532.23,
+      "min": null,
+      "max": null
+     }
+    ],
+    "cv_pf4": [
+     {
+      "tp": "L-92",
+      "value": 6973.32,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "L-44",
+      "value": 3903.78,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "L-3",
+      "value": 8602.35,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "R+1",
+      "value": 8143.69,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "R+45",
+      "value": 6374.28,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "R+82",
+      "value": 23891.75,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "R+194",
+      "value": 11371.31,
+      "min": null,
+      "max": null
+     }
+    ],
+    "cv_sap": [
+     {
+      "tp": "L-92",
+      "value": 4760000,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "L-44",
+      "value": 5428000,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "L-3",
+      "value": 6057300,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "R+1",
+      "value": 6183500,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "R+45",
+      "value": 6670900,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "R+82",
+      "value": 13775000,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "R+194",
+      "value": 7739400,
+      "min": null,
+      "max": null
+     }
+    ]
+   }
+  },
+  "C002": {
+   "sex": "F",
+   "results": {
+    "glucose": [
+     {
+      "tp": "L-92",
+      "value": 69,
+      "min": 65,
+      "max": 99
+     },
+     {
+      "tp": "L-44",
+      "value": 72,
+      "min": 65,
+      "max": 99
+     },
+     {
+      "tp": "L-3",
+      "value": 78,
+      "min": 65,
+      "max": 99
+     },
+     {
+      "tp": "R+1",
+      "value": 83,
+      "min": 65,
+      "max": 99
+     },
+     {
+      "tp": "R+45",
+      "value": 44,
+      "min": 65,
+      "max": 99
+     },
+     {
+      "tp": "R+82",
+      "value": 77,
+      "min": 65,
+      "max": 99
+     },
+     {
+      "tp": "R+194",
+      "value": 84,
+      "min": 65,
+      "max": 99
+     }
+    ],
+    "bun": [
+     {
+      "tp": "L-92",
+      "value": 14,
+      "min": 7,
+      "max": 25
+     },
+     {
+      "tp": "L-44",
+      "value": 16,
+      "min": 7,
+      "max": 25
+     },
+     {
+      "tp": "L-3",
+      "value": 17,
+      "min": 7,
+      "max": 25
+     },
+     {
+      "tp": "R+1",
+      "value": 20,
+      "min": 7,
+      "max": 25
+     },
+     {
+      "tp": "R+45",
+      "value": 19,
+      "min": 7,
+      "max": 25
+     },
+     {
+      "tp": "R+82",
+      "value": 16,
+      "min": 7,
+      "max": 25
+     },
+     {
+      "tp": "R+194",
+      "value": 18,
+      "min": 7,
+      "max": 25
+     }
+    ],
+    "creatinine": [
+     {
+      "tp": "L-92",
+      "value": 0.83,
+      "min": 0.5,
+      "max": 1.05
+     },
+     {
+      "tp": "L-44",
+      "value": 0.88,
+      "min": 0.5,
+      "max": 1.05
+     },
+     {
+      "tp": "L-3",
+      "value": 0.96,
+      "min": 0.5,
+      "max": 1.05
+     },
+     {
+      "tp": "R+1",
+      "value": 0.95,
+      "min": 0.5,
+      "max": 1.05
+     },
+     {
+      "tp": "R+45",
+      "value": 1.02,
+      "min": 0.5,
+      "max": 1.05
+     },
+     {
+      "tp": "R+82",
+      "value": 0.82,
+      "min": 0.5,
+      "max": 1.05
+     },
+     {
+      "tp": "R+194",
+      "value": 1.02,
+      "min": 0.5,
+      "max": 1.05
+     }
+    ],
+    "egfr": [
+     {
+      "tp": "L-92",
+      "value": 82,
+      "min": 60,
+      "max": null
+     },
+     {
+      "tp": "L-44",
+      "value": 76,
+      "min": 60,
+      "max": null
+     },
+     {
+      "tp": "L-3",
+      "value": 68,
+      "min": 60,
+      "max": null
+     },
+     {
+      "tp": "R+1",
+      "value": 69,
+      "min": 60,
+      "max": null
+     },
+     {
+      "tp": "R+45",
+      "value": 64,
+      "min": 60,
+      "max": null
+     },
+     {
+      "tp": "R+82",
+      "value": 83,
+      "min": 60,
+      "max": null
+     },
+     {
+      "tp": "R+194",
+      "value": 63,
+      "min": 60,
+      "max": null
+     }
+    ],
+    "sodium": [
+     {
+      "tp": "L-92",
+      "value": 142,
+      "min": 135,
+      "max": 146
+     },
+     {
+      "tp": "L-44",
+      "value": 141,
+      "min": 135,
+      "max": 146
+     },
+     {
+      "tp": "L-3",
+      "value": 143,
+      "min": 135,
+      "max": 146
+     },
+     {
+      "tp": "R+1",
+      "value": 137,
+      "min": 135,
+      "max": 146
+     },
+     {
+      "tp": "R+45",
+      "value": 140,
+      "min": 135,
+      "max": 146
+     },
+     {
+      "tp": "R+82",
+      "value": 141,
+      "min": 135,
+      "max": 146
+     },
+     {
+      "tp": "R+194",
+      "value": 138,
+      "min": 135,
+      "max": 146
+     }
+    ],
+    "potassium": [
+     {
+      "tp": "L-92",
+      "value": 3.9,
+      "min": 3.5,
+      "max": 5.3
+     },
+     {
+      "tp": "L-44",
+      "value": 4,
+      "min": 3.5,
+      "max": 5.3
+     },
+     {
+      "tp": "L-3",
+      "value": 3.8,
+      "min": 3.5,
+      "max": 5.3
+     },
+     {
+      "tp": "R+1",
+      "value": 3.5,
+      "min": 3.5,
+      "max": 5.3
+     },
+     {
+      "tp": "R+45",
+      "value": 4.1,
+      "min": 3.5,
+      "max": 5.3
+     },
+     {
+      "tp": "R+82",
+      "value": 3.7,
+      "min": 3.5,
+      "max": 5.3
+     },
+     {
+      "tp": "R+194",
+      "value": 4.4,
+      "min": 3.5,
+      "max": 5.3
+     }
+    ],
+    "chloride": [
+     {
+      "tp": "L-92",
+      "value": 103,
+      "min": 98,
+      "max": 110
+     },
+     {
+      "tp": "L-44",
+      "value": 103,
+      "min": 98,
+      "max": 110
+     },
+     {
+      "tp": "L-3",
+      "value": 106,
+      "min": 98,
+      "max": 110
+     },
+     {
+      "tp": "R+1",
+      "value": 103,
+      "min": 98,
+      "max": 110
+     },
+     {
+      "tp": "R+45",
+      "value": 104,
+      "min": 98,
+      "max": 110
+     },
+     {
+      "tp": "R+82",
+      "value": 105,
+      "min": 98,
+      "max": 110
+     },
+     {
+      "tp": "R+194",
+      "value": 104,
+      "min": 98,
+      "max": 110
+     }
+    ],
+    "co2": [
+     {
+      "tp": "L-92",
+      "value": 23,
+      "min": 20,
+      "max": 32
+     },
+     {
+      "tp": "L-44",
+      "value": 26,
+      "min": 20,
+      "max": 32
+     },
+     {
+      "tp": "L-3",
+      "value": 24,
+      "min": 20,
+      "max": 32
+     },
+     {
+      "tp": "R+1",
+      "value": 22,
+      "min": 20,
+      "max": 32
+     },
+     {
+      "tp": "R+45",
+      "value": 21,
+      "min": 20,
+      "max": 32
+     },
+     {
+      "tp": "R+82",
+      "value": 25,
+      "min": 20,
+      "max": 32
+     },
+     {
+      "tp": "R+194",
+      "value": 20,
+      "min": 20,
+      "max": 32
+     }
+    ],
+    "calcium": [
+     {
+      "tp": "L-92",
+      "value": 10.2,
+      "min": 8.6,
+      "max": 10.4
+     },
+     {
+      "tp": "L-44",
+      "value": 9.7,
+      "min": 8.6,
+      "max": 10.4
+     },
+     {
+      "tp": "L-3",
+      "value": 9.3,
+      "min": 8.6,
+      "max": 10.4
+     },
+     {
+      "tp": "R+1",
+      "value": 9.2,
+      "min": 8.6,
+      "max": 10.4
+     },
+     {
+      "tp": "R+45",
+      "value": 9.3,
+      "min": 8.6,
+      "max": 10.4
+     },
+     {
+      "tp": "R+82",
+      "value": 9.7,
+      "min": 8.6,
+      "max": 10.4
+     },
+     {
+      "tp": "R+194",
+      "value": 9.5,
+      "min": 8.6,
+      "max": 10.4
+     }
+    ],
+    "protein": [
+     {
+      "tp": "L-92",
+      "value": 7.9,
+      "min": 6.1,
+      "max": 8.1
+     },
+     {
+      "tp": "L-44",
+      "value": 7.6,
+      "min": 6.1,
+      "max": 8.1
+     },
+     {
+      "tp": "L-3",
+      "value": 7,
+      "min": 6.1,
+      "max": 8.1
+     },
+     {
+      "tp": "R+1",
+      "value": 7.4,
+      "min": 6.1,
+      "max": 8.1
+     },
+     {
+      "tp": "R+45",
+      "value": 6.8,
+      "min": 6.1,
+      "max": 8.1
+     },
+     {
+      "tp": "R+82",
+      "value": 7.3,
+      "min": 6.1,
+      "max": 8.1
+     },
+     {
+      "tp": "R+194",
+      "value": 7.3,
+      "min": 6.1,
+      "max": 8.1
+     }
+    ],
+    "albumin": [
+     {
+      "tp": "L-92",
+      "value": 4.9,
+      "min": 3.6,
+      "max": 5.1
+     },
+     {
+      "tp": "L-44",
+      "value": 4.6,
+      "min": 3.6,
+      "max": 5.1
+     },
+     {
+      "tp": "L-3",
+      "value": 4.3,
+      "min": 3.6,
+      "max": 5.1
+     },
+     {
+      "tp": "R+1",
+      "value": 4.4,
+      "min": 3.6,
+      "max": 5.1
+     },
+     {
+      "tp": "R+45",
+      "value": 4.2,
+      "min": 3.6,
+      "max": 5.1
+     },
+     {
+      "tp": "R+82",
+      "value": 4.5,
+      "min": 3.6,
+      "max": 5.1
+     },
+     {
+      "tp": "R+194",
+      "value": 4.3,
+      "min": 3.6,
+      "max": 5.1
+     }
+    ],
+    "globulin": [
+     {
+      "tp": "L-92",
+      "value": 3,
+      "min": 1.9,
+      "max": 3.7
+     },
+     {
+      "tp": "L-44",
+      "value": 3,
+      "min": 1.9,
+      "max": 3.7
+     },
+     {
+      "tp": "L-3",
+      "value": 2.7,
+      "min": 1.9,
+      "max": 3.7
+     },
+     {
+      "tp": "R+1",
+      "value": 3,
+      "min": 1.9,
+      "max": 3.7
+     },
+     {
+      "tp": "R+45",
+      "value": 2.6,
+      "min": 1.9,
+      "max": 3.7
+     },
+     {
+      "tp": "R+82",
+      "value": 2.8,
+      "min": 1.9,
+      "max": 3.7
+     },
+     {
+      "tp": "R+194",
+      "value": 3,
+      "min": 1.9,
+      "max": 3.7
+     }
+    ],
+    "bilirubin": [
+     {
+      "tp": "L-92",
+      "value": 0.5,
+      "min": 0.2,
+      "max": 1.2
+     },
+     {
+      "tp": "L-44",
+      "value": 0.4,
+      "min": 0.2,
+      "max": 1.2
+     },
+     {
+      "tp": "L-3",
+      "value": 0.3,
+      "min": 0.2,
+      "max": 1.2
+     },
+     {
+      "tp": "R+1",
+      "value": 0.4,
+      "min": 0.2,
+      "max": 1.2
+     },
+     {
+      "tp": "R+45",
+      "value": 0.5,
+      "min": 0.2,
+      "max": 1.2
+     },
+     {
+      "tp": "R+82",
+      "value": 0.5,
+      "min": 0.2,
+      "max": 1.2
+     },
+     {
+      "tp": "R+194",
+      "value": 0.3,
+      "min": 0.2,
+      "max": 1.2
+     }
+    ],
+    "alp": [
+     {
+      "tp": "L-92",
+      "value": 73,
+      "min": 37,
+      "max": 153
+     },
+     {
+      "tp": "L-44",
+      "value": 78,
+      "min": 37,
+      "max": 153
+     },
+     {
+      "tp": "L-3",
+      "value": 68,
+      "min": 37,
+      "max": 153
+     },
+     {
+      "tp": "R+1",
+      "value": 71,
+      "min": 37,
+      "max": 153
+     },
+     {
+      "tp": "R+45",
+      "value": 65,
+      "min": 37,
+      "max": 153
+     },
+     {
+      "tp": "R+82",
+      "value": 65,
+      "min": 37,
+      "max": 153
+     },
+     {
+      "tp": "R+194",
+      "value": 66,
+      "min": 37,
+      "max": 153
+     }
+    ],
+    "ast": [
+     {
+      "tp": "L-92",
+      "value": 19,
+      "min": 10,
+      "max": 35
+     },
+     {
+      "tp": "L-44",
+      "value": 31,
+      "min": 10,
+      "max": 35
+     },
+     {
+      "tp": "L-3",
+      "value": 40,
+      "min": 10,
+      "max": 35
+     },
+     {
+      "tp": "R+1",
+      "value": 23,
+      "min": 10,
+      "max": 35
+     },
+     {
+      "tp": "R+45",
+      "value": 17,
+      "min": 10,
+      "max": 35
+     },
+     {
+      "tp": "R+82",
+      "value": 21,
+      "min": 10,
+      "max": 35
+     },
+     {
+      "tp": "R+194",
+      "value": 24,
+      "min": 10,
+      "max": 35
+     }
+    ],
+    "alt": [
+     {
+      "tp": "L-92",
+      "value": 16,
+      "min": 6,
+      "max": 29
+     },
+     {
+      "tp": "L-44",
+      "value": 24,
+      "min": 6,
+      "max": 29
+     },
+     {
+      "tp": "L-3",
+      "value": 19,
+      "min": 6,
+      "max": 29
+     },
+     {
+      "tp": "R+1",
+      "value": 16,
+      "min": 6,
+      "max": 29
+     },
+     {
+      "tp": "R+45",
+      "value": 14,
+      "min": 6,
+      "max": 29
+     },
+     {
+      "tp": "R+82",
+      "value": 17,
+      "min": 6,
+      "max": 29
+     },
+     {
+      "tp": "R+194",
+      "value": 17,
+      "min": 6,
+      "max": 29
+     }
+    ],
+    "cv_a2_macroglobulin": [
+     {
+      "tp": "L-92",
+      "value": 2036900,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "L-44",
+      "value": 734243.34,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "L-3",
+      "value": 1892200,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "R+1",
+      "value": 913857.15,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "R+45",
+      "value": 1820800,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "R+82",
+      "value": 1403700,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "R+194",
+      "value": 2342900,
+      "min": null,
+      "max": null
+     }
+    ],
+    "cv_agp": [
+     {
+      "tp": "L-92",
+      "value": 2932000,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "L-44",
+      "value": 1963300,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "L-3",
+      "value": 3653700,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "R+1",
+      "value": 942754.34,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "R+45",
+      "value": 2479200,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "R+82",
+      "value": 2968900,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "R+194",
+      "value": 2220700,
+      "min": null,
+      "max": null
+     }
+    ],
+    "cv_crp": [
+     {
+      "tp": "L-92",
+      "value": 8927100,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "L-44",
+      "value": 1568500,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "L-3",
+      "value": 11967000,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "R+1",
+      "value": 9311500,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "R+45",
+      "value": 3677200,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "R+82",
+      "value": 8633700,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "R+194",
+      "value": 21462000,
+      "min": null,
+      "max": null
+     }
+    ],
+    "cv_fetuin_a36": [
+     {
+      "tp": "L-92",
+      "value": 276877.57,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "L-44",
+      "value": 190495.51,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "L-3",
+      "value": 294376.04,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "R+1",
+      "value": 125785.45,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "R+45",
+      "value": 270655.44,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "R+82",
+      "value": 253558.23,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "R+194",
+      "value": 241485.24,
+      "min": null,
+      "max": null
+     }
+    ],
+    "cv_fibrinogen": [
+     {
+      "tp": "L-92",
+      "value": 3657,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "L-44",
+      "value": 4027.43,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "L-3",
+      "value": 6533.18,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "R+1",
+      "value": 1999.88,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "R+45",
+      "value": 4074.55,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "R+82",
+      "value": 3279.23,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "R+194",
+      "value": 2852.5,
+      "min": null,
+      "max": null
+     }
+    ],
+    "cv_haptoglobin": [
+     {
+      "tp": "L-92",
+      "value": 3204700,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "L-44",
+      "value": 80330.74,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "L-3",
+      "value": 3825900,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "R+1",
+      "value": 568223.15,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "R+45",
+      "value": 3442000,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "R+82",
+      "value": 17907000,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "R+194",
+      "value": 6036000,
+      "min": null,
+      "max": null
+     }
+    ],
+    "cv_l_selectin": [
+     {
+      "tp": "L-92",
+      "value": 1285900,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "L-44",
+      "value": 893494.17,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "L-3",
+      "value": 1336800,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "R+1",
+      "value": 629653.79,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "R+45",
+      "value": 1247300,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "R+82",
+      "value": 1114100,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "R+194",
+      "value": 1077400,
+      "min": null,
+      "max": null
+     }
+    ],
+    "cv_pf4": [
+     {
+      "tp": "L-92",
+      "value": 13652.06,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "L-44",
+      "value": 3335.42,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "L-3",
+      "value": 15879.14,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "R+1",
+      "value": 5951.22,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "R+45",
+      "value": 14071.86,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "R+82",
+      "value": 12168.67,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "R+194",
+      "value": 21024.9,
+      "min": null,
+      "max": null
+     }
+    ],
+    "cv_sap": [
+     {
+      "tp": "L-92",
+      "value": 10983000,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "L-44",
+      "value": 4509000,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "L-3",
+      "value": 11733000,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "R+1",
+      "value": 5592700,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "R+45",
+      "value": 10765000,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "R+82",
+      "value": 10210000,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "R+194",
+      "value": 11337000,
+      "min": null,
+      "max": null
+     }
+    ]
+   }
+  },
+  "C004": {
+   "sex": "M",
+   "results": {
+    "glucose": [
+     {
+      "tp": "L-92",
+      "value": 100,
+      "min": 65,
+      "max": 99
+     },
+     {
+      "tp": "L-44",
+      "value": 83,
+      "min": 65,
+      "max": 99
+     },
+     {
+      "tp": "L-3",
+      "value": 56,
+      "min": 65,
+      "max": 99
+     },
+     {
+      "tp": "R+1",
+      "value": 97,
+      "min": 65,
+      "max": 99
+     },
+     {
+      "tp": "R+45",
+      "value": 43,
+      "min": 65,
+      "max": 99
+     },
+     {
+      "tp": "R+82",
+      "value": 80,
+      "min": 65,
+      "max": 99
+     },
+     {
+      "tp": "R+194",
+      "value": 84,
+      "min": 65,
+      "max": 99
+     }
+    ],
+    "bun": [
+     {
+      "tp": "L-92",
+      "value": 22,
+      "min": 7,
+      "max": 25
+     },
+     {
+      "tp": "L-44",
+      "value": 19,
+      "min": 7,
+      "max": 25
+     },
+     {
+      "tp": "L-3",
+      "value": 19,
+      "min": 7,
+      "max": 25
+     },
+     {
+      "tp": "R+1",
+      "value": 26,
+      "min": 7,
+      "max": 25
+     },
+     {
+      "tp": "R+45",
+      "value": 21,
+      "min": 7,
+      "max": 25
+     },
+     {
+      "tp": "R+82",
+      "value": 16,
+      "min": 7,
+      "max": 25
+     },
+     {
+      "tp": "R+194",
+      "value": 27,
+      "min": 7,
+      "max": 25
+     }
+    ],
+    "creatinine": [
+     {
+      "tp": "L-92",
+      "value": 1.14,
+      "min": 0.6,
+      "max": 1.35
+     },
+     {
+      "tp": "L-44",
+      "value": 1.08,
+      "min": 0.6,
+      "max": 1.35
+     },
+     {
+      "tp": "L-3",
+      "value": 1.13,
+      "min": 0.6,
+      "max": 1.35
+     },
+     {
+      "tp": "R+1",
+      "value": 1.15,
+      "min": 0.6,
+      "max": 1.35
+     },
+     {
+      "tp": "R+45",
+      "value": 1.08,
+      "min": 0.6,
+      "max": 1.35
+     },
+     {
+      "tp": "R+82",
+      "value": 1.11,
+      "min": 0.6,
+      "max": 1.35
+     },
+     {
+      "tp": "R+194",
+      "value": 1.31,
+      "min": 0.6,
+      "max": 1.35
+     }
+    ],
+    "egfr": [
+     {
+      "tp": "L-92",
+      "value": 79,
+      "min": 60,
+      "max": null
+     },
+     {
+      "tp": "L-44",
+      "value": 85,
+      "min": 60,
+      "max": null
+     },
+     {
+      "tp": "L-3",
+      "value": 80,
+      "min": 60,
+      "max": null
+     },
+     {
+      "tp": "R+1",
+      "value": 78,
+      "min": 60,
+      "max": null
+     },
+     {
+      "tp": "R+45",
+      "value": 84,
+      "min": 60,
+      "max": null
+     },
+     {
+      "tp": "R+82",
+      "value": 81,
+      "min": 60,
+      "max": null
+     },
+     {
+      "tp": "R+194",
+      "value": 67,
+      "min": 60,
+      "max": null
+     }
+    ],
+    "sodium": [
+     {
+      "tp": "L-92",
+      "value": 138,
+      "min": 135,
+      "max": 146
+     },
+     {
+      "tp": "L-44",
+      "value": 140,
+      "min": 135,
+      "max": 146
+     },
+     {
+      "tp": "L-3",
+      "value": 141,
+      "min": 135,
+      "max": 146
+     },
+     {
+      "tp": "R+1",
+      "value": 140,
+      "min": 135,
+      "max": 146
+     },
+     {
+      "tp": "R+45",
+      "value": 139,
+      "min": 135,
+      "max": 146
+     },
+     {
+      "tp": "R+82",
+      "value": 140,
+      "min": 135,
+      "max": 146
+     },
+     {
+      "tp": "R+194",
+      "value": 141,
+      "min": 135,
+      "max": 146
+     }
+    ],
+    "potassium": [
+     {
+      "tp": "L-92",
+      "value": 4.2,
+      "min": 3.5,
+      "max": 5.3
+     },
+     {
+      "tp": "L-44",
+      "value": 4.2,
+      "min": 3.5,
+      "max": 5.3
+     },
+     {
+      "tp": "L-3",
+      "value": 3.7,
+      "min": 3.5,
+      "max": 5.3
+     },
+     {
+      "tp": "R+1",
+      "value": 4,
+      "min": 3.5,
+      "max": 5.3
+     },
+     {
+      "tp": "R+45",
+      "value": 5.9,
+      "min": 3.5,
+      "max": 5.3
+     },
+     {
+      "tp": "R+82",
+      "value": 4.2,
+      "min": 3.5,
+      "max": 5.3
+     },
+     {
+      "tp": "R+194",
+      "value": 3.8,
+      "min": 3.5,
+      "max": 5.3
+     }
+    ],
+    "chloride": [
+     {
+      "tp": "L-92",
+      "value": 102,
+      "min": 98,
+      "max": 110
+     },
+     {
+      "tp": "L-44",
+      "value": 103,
+      "min": 98,
+      "max": 110
+     },
+     {
+      "tp": "L-3",
+      "value": 103,
+      "min": 98,
+      "max": 110
+     },
+     {
+      "tp": "R+1",
+      "value": 105,
+      "min": 98,
+      "max": 110
+     },
+     {
+      "tp": "R+45",
+      "value": 102,
+      "min": 98,
+      "max": 110
+     },
+     {
+      "tp": "R+82",
+      "value": 103,
+      "min": 98,
+      "max": 110
+     },
+     {
+      "tp": "R+194",
+      "value": 105,
+      "min": 98,
+      "max": 110
+     }
+    ],
+    "co2": [
+     {
+      "tp": "L-92",
+      "value": 23,
+      "min": 20,
+      "max": 32
+     },
+     {
+      "tp": "L-44",
+      "value": 24,
+      "min": 20,
+      "max": 32
+     },
+     {
+      "tp": "L-3",
+      "value": 24,
+      "min": 20,
+      "max": 32
+     },
+     {
+      "tp": "R+1",
+      "value": 23,
+      "min": 20,
+      "max": 32
+     },
+     {
+      "tp": "R+45",
+      "value": 24,
+      "min": 20,
+      "max": 32
+     },
+     {
+      "tp": "R+82",
+      "value": 24,
+      "min": 20,
+      "max": 32
+     },
+     {
+      "tp": "R+194",
+      "value": 19,
+      "min": 20,
+      "max": 32
+     }
+    ],
+    "calcium": [
+     {
+      "tp": "L-92",
+      "value": 10,
+      "min": 8.6,
+      "max": 10.3
+     },
+     {
+      "tp": "L-44",
+      "value": 10.1,
+      "min": 8.6,
+      "max": 10.3
+     },
+     {
+      "tp": "L-3",
+      "value": 10.2,
+      "min": 8.6,
+      "max": 10.3
+     },
+     {
+      "tp": "R+1",
+      "value": 9.8,
+      "min": 8.6,
+      "max": 10.3
+     },
+     {
+      "tp": "R+45",
+      "value": 9.8,
+      "min": 8.6,
+      "max": 10.3
+     },
+     {
+      "tp": "R+82",
+      "value": 10,
+      "min": 8.6,
+      "max": 10.3
+     },
+     {
+      "tp": "R+194",
+      "value": 9.8,
+      "min": 8.6,
+      "max": 10.3
+     }
+    ],
+    "protein": [
+     {
+      "tp": "L-92",
+      "value": 7.4,
+      "min": 6.1,
+      "max": 8.1
+     },
+     {
+      "tp": "L-44",
+      "value": 7.3,
+      "min": 6.1,
+      "max": 8.1
+     },
+     {
+      "tp": "L-3",
+      "value": 7.3,
+      "min": 6.1,
+      "max": 8.1
+     },
+     {
+      "tp": "R+1",
+      "value": 7.4,
+      "min": 6.1,
+      "max": 8.1
+     },
+     {
+      "tp": "R+45",
+      "value": 7.3,
+      "min": 6.1,
+      "max": 8.1
+     },
+     {
+      "tp": "R+82",
+      "value": 7.4,
+      "min": 6.1,
+      "max": 8.1
+     },
+     {
+      "tp": "R+194",
+      "value": 7.2,
+      "min": 6.1,
+      "max": 8.1
+     }
+    ],
+    "albumin": [
+     {
+      "tp": "L-92",
+      "value": 4.6,
+      "min": 3.6,
+      "max": 5.1
+     },
+     {
+      "tp": "L-44",
+      "value": 4.4,
+      "min": 3.6,
+      "max": 5.1
+     },
+     {
+      "tp": "L-3",
+      "value": 4.6,
+      "min": 3.6,
+      "max": 5.1
+     },
+     {
+      "tp": "R+1",
+      "value": 4.5,
+      "min": 3.6,
+      "max": 5.1
+     },
+     {
+      "tp": "R+45",
+      "value": 4.5,
+      "min": 3.6,
+      "max": 5.1
+     },
+     {
+      "tp": "R+82",
+      "value": 4.6,
+      "min": 3.6,
+      "max": 5.1
+     },
+     {
+      "tp": "R+194",
+      "value": 4.3,
+      "min": 3.6,
+      "max": 5.1
+     }
+    ],
+    "globulin": [
+     {
+      "tp": "L-92",
+      "value": 2.8,
+      "min": 1.9,
+      "max": 3.7
+     },
+     {
+      "tp": "L-44",
+      "value": 2.9,
+      "min": 1.9,
+      "max": 3.7
+     },
+     {
+      "tp": "L-3",
+      "value": 2.7,
+      "min": 1.9,
+      "max": 3.7
+     },
+     {
+      "tp": "R+1",
+      "value": 2.9,
+      "min": 1.9,
+      "max": 3.7
+     },
+     {
+      "tp": "R+45",
+      "value": 2.8,
+      "min": 1.9,
+      "max": 3.7
+     },
+     {
+      "tp": "R+82",
+      "value": 2.8,
+      "min": 1.9,
+      "max": 3.7
+     },
+     {
+      "tp": "R+194",
+      "value": 2.9,
+      "min": 1.9,
+      "max": 3.7
+     }
+    ],
+    "bilirubin": [
+     {
+      "tp": "L-92",
+      "value": 0.7,
+      "min": 0.2,
+      "max": 1.2
+     },
+     {
+      "tp": "L-44",
+      "value": 0.7,
+      "min": 0.2,
+      "max": 1.2
+     },
+     {
+      "tp": "L-3",
+      "value": 0.5,
+      "min": 0.2,
+      "max": 1.2
+     },
+     {
+      "tp": "R+1",
+      "value": 0.4,
+      "min": 0.2,
+      "max": 1.2
+     },
+     {
+      "tp": "R+45",
+      "value": 0.7,
+      "min": 0.2,
+      "max": 1.2
+     },
+     {
+      "tp": "R+82",
+      "value": 1,
+      "min": 0.2,
+      "max": 1.2
+     },
+     {
+      "tp": "R+194",
+      "value": 0.5,
+      "min": 0.2,
+      "max": 1.2
+     }
+    ],
+    "alp": [
+     {
+      "tp": "L-92",
+      "value": 58,
+      "min": 36,
+      "max": 130
+     },
+     {
+      "tp": "L-44",
+      "value": 56,
+      "min": 36,
+      "max": 130
+     },
+     {
+      "tp": "L-3",
+      "value": 55,
+      "min": 36,
+      "max": 130
+     },
+     {
+      "tp": "R+1",
+      "value": 62,
+      "min": 36,
+      "max": 130
+     },
+     {
+      "tp": "R+45",
+      "value": 60,
+      "min": 36,
+      "max": 130
+     },
+     {
+      "tp": "R+82",
+      "value": 54,
+      "min": 36,
+      "max": 130
+     },
+     {
+      "tp": "R+194",
+      "value": 57,
+      "min": 36,
+      "max": 130
+     }
+    ],
+    "ast": [
+     {
+      "tp": "L-92",
+      "value": 36,
+      "min": 10,
+      "max": 40
+     },
+     {
+      "tp": "L-44",
+      "value": 44,
+      "min": 10,
+      "max": 40
+     },
+     {
+      "tp": "L-3",
+      "value": 39,
+      "min": 10,
+      "max": 40
+     },
+     {
+      "tp": "R+1",
+      "value": 48,
+      "min": 10,
+      "max": 40
+     },
+     {
+      "tp": "R+45",
+      "value": 33,
+      "min": 10,
+      "max": 40
+     },
+     {
+      "tp": "R+82",
+      "value": 25,
+      "min": 10,
+      "max": 40
+     },
+     {
+      "tp": "R+194",
+      "value": 38,
+      "min": 10,
+      "max": 40
+     }
+    ],
+    "alt": [
+     {
+      "tp": "L-92",
+      "value": 37,
+      "min": 9,
+      "max": 46
+     },
+     {
+      "tp": "L-44",
+      "value": 35,
+      "min": 9,
+      "max": 46
+     },
+     {
+      "tp": "L-3",
+      "value": 37,
+      "min": 9,
+      "max": 46
+     },
+     {
+      "tp": "R+1",
+      "value": 40,
+      "min": 9,
+      "max": 46
+     },
+     {
+      "tp": "R+45",
+      "value": 32,
+      "min": 9,
+      "max": 46
+     },
+     {
+      "tp": "R+82",
+      "value": 23,
+      "min": 9,
+      "max": 46
+     },
+     {
+      "tp": "R+194",
+      "value": 43,
+      "min": 9,
+      "max": 46
+     }
+    ],
+    "cv_a2_macroglobulin": [
+     {
+      "tp": "L-92",
+      "value": 1354300,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "L-44",
+      "value": 634017.94,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "L-3",
+      "value": 1780800,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "R+1",
+      "value": 1651200,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "R+45",
+      "value": 1526000,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "R+82",
+      "value": 1785900,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "R+194",
+      "value": 1568600,
+      "min": null,
+      "max": null
+     }
+    ],
+    "cv_agp": [
+     {
+      "tp": "L-92",
+      "value": 2918800,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "L-44",
+      "value": 2165100,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "L-3",
+      "value": 3606700,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "R+1",
+      "value": 3338700,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "R+45",
+      "value": 3484600,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "R+82",
+      "value": 2651400,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "R+194",
+      "value": 4564200,
+      "min": null,
+      "max": null
+     }
+    ],
+    "cv_crp": [
+     {
+      "tp": "L-92",
+      "value": 21378000,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "L-44",
+      "value": 1289600,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "L-3",
+      "value": 13742000,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "R+1",
+      "value": 17701000,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "R+45",
+      "value": 22407000,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "R+82",
+      "value": 7902300,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "R+194",
+      "value": 46006000,
+      "min": null,
+      "max": null
+     }
+    ],
+    "cv_fetuin_a36": [
+     {
+      "tp": "L-92",
+      "value": 253064.34,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "L-44",
+      "value": 180155.97,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "L-3",
+      "value": 329448.71,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "R+1",
+      "value": 280617.78,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "R+45",
+      "value": 287113.08,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "R+82",
+      "value": 245913.55,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "R+194",
+      "value": 285112.88,
+      "min": null,
+      "max": null
+     }
+    ],
+    "cv_fibrinogen": [
+     {
+      "tp": "L-92",
+      "value": 3226.41,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "L-44",
+      "value": 3602.38,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "L-3",
+      "value": 5428.66,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "R+1",
+      "value": 4187.89,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "R+45",
+      "value": 2840.5,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "R+82",
+      "value": 3553.01,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "R+194",
+      "value": 4390.9,
+      "min": null,
+      "max": null
+     }
+    ],
+    "cv_haptoglobin": [
+     {
+      "tp": "L-92",
+      "value": 17907000,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "L-44",
+      "value": 73870.48,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "L-3",
+      "value": 17907000,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "R+1",
+      "value": 17907000,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "R+45",
+      "value": 17907000,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "R+82",
+      "value": 2919100,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "R+194",
+      "value": 17907000,
+      "min": null,
+      "max": null
+     }
+    ],
+    "cv_l_selectin": [
+     {
+      "tp": "L-92",
+      "value": 1075600,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "L-44",
+      "value": 789635.95,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "L-3",
+      "value": 1364800,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "R+1",
+      "value": 1119400,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "R+45",
+      "value": 1256100,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "R+82",
+      "value": 1193000,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "R+194",
+      "value": 1250800,
+      "min": null,
+      "max": null
+     }
+    ],
+    "cv_pf4": [
+     {
+      "tp": "L-92",
+      "value": 13080.91,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "L-44",
+      "value": 2156.35,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "L-3",
+      "value": 19678.31,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "R+1",
+      "value": 14317.3,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "R+45",
+      "value": 15095.42,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "R+82",
+      "value": 13342.85,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "R+194",
+      "value": 15624.9,
+      "min": null,
+      "max": null
+     }
+    ],
+    "cv_sap": [
+     {
+      "tp": "L-92",
+      "value": 10138000,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "L-44",
+      "value": 4048000,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "L-3",
+      "value": 12111000,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "R+1",
+      "value": 12329000,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "R+45",
+      "value": 11850000,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "R+82",
+      "value": 9482000,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "R+194",
+      "value": 13414000,
+      "min": null,
+      "max": null
+     }
+    ]
+   }
+  },
+  "C003": {
+   "sex": "F",
+   "results": {
+    "glucose": [
+     {
+      "tp": "L-92",
+      "value": 77,
+      "min": 65,
+      "max": 99
+     },
+     {
+      "tp": "L-44",
+      "value": 62,
+      "min": 65,
+      "max": 99
+     },
+     {
+      "tp": "L-3",
+      "value": 75,
+      "min": 65,
+      "max": 99
+     },
+     {
+      "tp": "R+1",
+      "value": 103,
+      "min": 65,
+      "max": 99
+     },
+     {
+      "tp": "R+45",
+      "value": 36,
+      "min": 65,
+      "max": 99
+     },
+     {
+      "tp": "R+82",
+      "value": 80,
+      "min": 65,
+      "max": 99
+     },
+     {
+      "tp": "R+194",
+      "value": 73,
+      "min": 65,
+      "max": 99
+     }
+    ],
+    "bun": [
+     {
+      "tp": "L-92",
+      "value": 17,
+      "min": 7,
+      "max": 25
+     },
+     {
+      "tp": "L-44",
+      "value": 19,
+      "min": 7,
+      "max": 25
+     },
+     {
+      "tp": "L-3",
+      "value": 26,
+      "min": 7,
+      "max": 25
+     },
+     {
+      "tp": "R+1",
+      "value": 21,
+      "min": 7,
+      "max": 25
+     },
+     {
+      "tp": "R+45",
+      "value": 19,
+      "min": 7,
+      "max": 25
+     },
+     {
+      "tp": "R+82",
+      "value": 23,
+      "min": 7,
+      "max": 25
+     },
+     {
+      "tp": "R+194",
+      "value": 28,
+      "min": 7,
+      "max": 25
+     }
+    ],
+    "creatinine": [
+     {
+      "tp": "L-92",
+      "value": 1,
+      "min": 0.6,
+      "max": 1.35
+     },
+     {
+      "tp": "L-44",
+      "value": 1.03,
+      "min": 0.6,
+      "max": 1.35
+     },
+     {
+      "tp": "L-3",
+      "value": 1.08,
+      "min": 0.6,
+      "max": 1.35
+     },
+     {
+      "tp": "R+1",
+      "value": 0.89,
+      "min": 0.5,
+      "max": 1.1
+     },
+     {
+      "tp": "R+45",
+      "value": 0.94,
+      "min": 0.5,
+      "max": 1.1
+     },
+     {
+      "tp": "R+82",
+      "value": 0.89,
+      "min": 0.5,
+      "max": 1.1
+     },
+     {
+      "tp": "R+194",
+      "value": 1.1,
+      "min": 0.5,
+      "max": 1.1
+     }
+    ],
+    "egfr": [
+     {
+      "tp": "L-92",
+      "value": 76,
+      "min": 60,
+      "max": null
+     },
+     {
+      "tp": "L-44",
+      "value": 73,
+      "min": 60,
+      "max": null
+     },
+     {
+      "tp": "L-3",
+      "value": 69,
+      "min": 60,
+      "max": null
+     },
+     {
+      "tp": "R+1",
+      "value": 88,
+      "min": 60,
+      "max": null
+     },
+     {
+      "tp": "R+45",
+      "value": 82,
+      "min": 60,
+      "max": null
+     },
+     {
+      "tp": "R+82",
+      "value": 87,
+      "min": 60,
+      "max": null
+     },
+     {
+      "tp": "R+194",
+      "value": 67,
+      "min": 60,
+      "max": null
+     }
+    ],
+    "sodium": [
+     {
+      "tp": "L-92",
+      "value": 139,
+      "min": 135,
+      "max": 146
+     },
+     {
+      "tp": "L-44",
+      "value": 139,
+      "min": 135,
+      "max": 146
+     },
+     {
+      "tp": "L-3",
+      "value": 138,
+      "min": 135,
+      "max": 146
+     },
+     {
+      "tp": "R+1",
+      "value": 137,
+      "min": 135,
+      "max": 146
+     },
+     {
+      "tp": "R+45",
+      "value": 136,
+      "min": 135,
+      "max": 146
+     },
+     {
+      "tp": "R+82",
+      "value": 138,
+      "min": 135,
+      "max": 146
+     },
+     {
+      "tp": "R+194",
+      "value": 137,
+      "min": 135,
+      "max": 146
+     }
+    ],
+    "potassium": [
+     {
+      "tp": "L-92",
+      "value": 3.7,
+      "min": 3.5,
+      "max": 5.3
+     },
+     {
+      "tp": "L-44",
+      "value": 3.5,
+      "min": 3.5,
+      "max": 5.3
+     },
+     {
+      "tp": "L-3",
+      "value": 3.3,
+      "min": 3.5,
+      "max": 5.3
+     },
+     {
+      "tp": "R+1",
+      "value": 3,
+      "min": 3.5,
+      "max": 5.3
+     },
+     {
+      "tp": "R+45",
+      "value": 4.4,
+      "min": 3.5,
+      "max": 5.3
+     },
+     {
+      "tp": "R+82",
+      "value": 3.7,
+      "min": 3.5,
+      "max": 5.3
+     },
+     {
+      "tp": "R+194",
+      "value": 3.8,
+      "min": 3.5,
+      "max": 5.3
+     }
+    ],
+    "chloride": [
+     {
+      "tp": "L-92",
+      "value": 102,
+      "min": 98,
+      "max": 110
+     },
+     {
+      "tp": "L-44",
+      "value": 99,
+      "min": 98,
+      "max": 110
+     },
+     {
+      "tp": "L-3",
+      "value": 101,
+      "min": 98,
+      "max": 110
+     },
+     {
+      "tp": "R+1",
+      "value": 103,
+      "min": 98,
+      "max": 110
+     },
+     {
+      "tp": "R+45",
+      "value": 97,
+      "min": 98,
+      "max": 110
+     },
+     {
+      "tp": "R+82",
+      "value": 102,
+      "min": 98,
+      "max": 110
+     },
+     {
+      "tp": "R+194",
+      "value": 101,
+      "min": 98,
+      "max": 110
+     }
+    ],
+    "co2": [
+     {
+      "tp": "L-92",
+      "value": 20,
+      "min": 20,
+      "max": 32
+     },
+     {
+      "tp": "L-44",
+      "value": 21,
+      "min": 20,
+      "max": 32
+     },
+     {
+      "tp": "L-3",
+      "value": 23,
+      "min": 20,
+      "max": 32
+     },
+     {
+      "tp": "R+1",
+      "value": 20,
+      "min": 20,
+      "max": 32
+     },
+     {
+      "tp": "R+45",
+      "value": 23,
+      "min": 20,
+      "max": 32
+     },
+     {
+      "tp": "R+82",
+      "value": 23,
+      "min": 20,
+      "max": 32
+     },
+     {
+      "tp": "R+194",
+      "value": 22,
+      "min": 20,
+      "max": 32
+     }
+    ],
+    "calcium": [
+     {
+      "tp": "L-92",
+      "value": 9.3,
+      "min": 8.6,
+      "max": 10.3
+     },
+     {
+      "tp": "L-44",
+      "value": 10.3,
+      "min": 8.6,
+      "max": 10.3
+     },
+     {
+      "tp": "L-3",
+      "value": 9.5,
+      "min": 8.6,
+      "max": 10.3
+     },
+     {
+      "tp": "R+1",
+      "value": 9.4,
+      "min": 8.6,
+      "max": 10.2
+     },
+     {
+      "tp": "R+45",
+      "value": 9.6,
+      "min": 8.6,
+      "max": 10.2
+     },
+     {
+      "tp": "R+82",
+      "value": 10,
+      "min": 8.6,
+      "max": 10.2
+     },
+     {
+      "tp": "R+194",
+      "value": 9.6,
+      "min": 8.6,
+      "max": 10.2
+     }
+    ],
+    "protein": [
+     {
+      "tp": "L-92",
+      "value": 7.1,
+      "min": 6.1,
+      "max": 8.1
+     },
+     {
+      "tp": "L-44",
+      "value": 8.8,
+      "min": 6.1,
+      "max": 8.1
+     },
+     {
+      "tp": "L-3",
+      "value": 6.8,
+      "min": 6.1,
+      "max": 8.1
+     },
+     {
+      "tp": "R+1",
+      "value": 7.1,
+      "min": 6.1,
+      "max": 8.1
+     },
+     {
+      "tp": "R+45",
+      "value": 7.4,
+      "min": 6.1,
+      "max": 8.1
+     },
+     {
+      "tp": "R+82",
+      "value": 7.5,
+      "min": 6.1,
+      "max": 8.1
+     },
+     {
+      "tp": "R+194",
+      "value": 7.3,
+      "min": 6.1,
+      "max": 8.1
+     }
+    ],
+    "albumin": [
+     {
+      "tp": "L-92",
+      "value": 4.4,
+      "min": 3.6,
+      "max": 5.1
+     },
+     {
+      "tp": "L-44",
+      "value": 4.9,
+      "min": 3.6,
+      "max": 5.1
+     },
+     {
+      "tp": "L-3",
+      "value": 4.2,
+      "min": 3.6,
+      "max": 5.1
+     },
+     {
+      "tp": "R+1",
+      "value": 4.2,
+      "min": 3.6,
+      "max": 5.1
+     },
+     {
+      "tp": "R+45",
+      "value": 4.5,
+      "min": 3.6,
+      "max": 5.1
+     },
+     {
+      "tp": "R+82",
+      "value": 4.8,
+      "min": 3.6,
+      "max": 5.1
+     },
+     {
+      "tp": "R+194",
+      "value": 4.4,
+      "min": 3.6,
+      "max": 5.1
+     }
+    ],
+    "globulin": [
+     {
+      "tp": "L-92",
+      "value": 2.7,
+      "min": 1.9,
+      "max": 3.7
+     },
+     {
+      "tp": "L-44",
+      "value": 3.9,
+      "min": 1.9,
+      "max": 3.7
+     },
+     {
+      "tp": "L-3",
+      "value": 2.6,
+      "min": 1.9,
+      "max": 3.7
+     },
+     {
+      "tp": "R+1",
+      "value": 2.9,
+      "min": 1.9,
+      "max": 3.7
+     },
+     {
+      "tp": "R+45",
+      "value": 2.9,
+      "min": 1.9,
+      "max": 3.7
+     },
+     {
+      "tp": "R+82",
+      "value": 2.7,
+      "min": 1.9,
+      "max": 3.7
+     },
+     {
+      "tp": "R+194",
+      "value": 2.9,
+      "min": 1.9,
+      "max": 3.7
+     }
+    ],
+    "bilirubin": [
+     {
+      "tp": "L-92",
+      "value": 0.3,
+      "min": 0.2,
+      "max": 1.2
+     },
+     {
+      "tp": "L-44",
+      "value": 0.4,
+      "min": 0.2,
+      "max": 1.2
+     },
+     {
+      "tp": "L-3",
+      "value": 0.2,
+      "min": 0.2,
+      "max": 1.2
+     },
+     {
+      "tp": "R+1",
+      "value": 0.3,
+      "min": 0.2,
+      "max": 1.2
+     },
+     {
+      "tp": "R+45",
+      "value": 0.7,
+      "min": 0.2,
+      "max": 1.2
+     },
+     {
+      "tp": "R+82",
+      "value": 0.5,
+      "min": 0.2,
+      "max": 1.2
+     },
+     {
+      "tp": "R+194",
+      "value": 0.3,
+      "min": 0.2,
+      "max": 1.2
+     }
+    ],
+    "alp": [
+     {
+      "tp": "L-92",
+      "value": 33,
+      "min": 36,
+      "max": 130
+     },
+     {
+      "tp": "L-44",
+      "value": 41,
+      "min": 36,
+      "max": 130
+     },
+     {
+      "tp": "L-3",
+      "value": 31,
+      "min": 36,
+      "max": 130
+     },
+     {
+      "tp": "R+1",
+      "value": 41,
+      "min": 31,
+      "max": 125
+     },
+     {
+      "tp": "R+45",
+      "value": 51,
+      "min": 31,
+      "max": 125
+     },
+     {
+      "tp": "R+82",
+      "value": 50,
+      "min": 31,
+      "max": 125
+     },
+     {
+      "tp": "R+194",
+      "value": 43,
+      "min": 31,
+      "max": 125
+     }
+    ],
+    "ast": [
+     {
+      "tp": "L-92",
+      "value": 15,
+      "min": 10,
+      "max": 40
+     },
+     {
+      "tp": "L-44",
+      "value": 17,
+      "min": 10,
+      "max": 40
+     },
+     {
+      "tp": "L-3",
+      "value": 13,
+      "min": 10,
+      "max": 40
+     },
+     {
+      "tp": "R+1",
+      "value": 18,
+      "min": 10,
+      "max": 30
+     },
+     {
+      "tp": "R+45",
+      "value": 19,
+      "min": 10,
+      "max": 30
+     },
+     {
+      "tp": "R+82",
+      "value": 15,
+      "min": 10,
+      "max": 30
+     },
+     {
+      "tp": "R+194",
+      "value": 15,
+      "min": 10,
+      "max": 30
+     }
+    ],
+    "alt": [
+     {
+      "tp": "L-92",
+      "value": 12,
+      "min": 9,
+      "max": 46
+     },
+     {
+      "tp": "L-44",
+      "value": 13,
+      "min": 9,
+      "max": 46
+     },
+     {
+      "tp": "L-3",
+      "value": 13,
+      "min": 9,
+      "max": 46
+     },
+     {
+      "tp": "R+1",
+      "value": 19,
+      "min": 6,
+      "max": 29
+     },
+     {
+      "tp": "R+45",
+      "value": 17,
+      "min": 6,
+      "max": 29
+     },
+     {
+      "tp": "R+82",
+      "value": 12,
+      "min": 6,
+      "max": 29
+     },
+     {
+      "tp": "R+194",
+      "value": 10,
+      "min": 6,
+      "max": 29
+     }
+    ],
+    "cv_a2_macroglobulin": [
+     {
+      "tp": "L-92",
+      "value": 3030400,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "L-44",
+      "value": 531433.88,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "L-3",
+      "value": 2948400,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "R+1",
+      "value": 3051700,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "R+45",
+      "value": 2895000,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "R+82",
+      "value": 2127300,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "R+194",
+      "value": 2025600,
+      "min": null,
+      "max": null
+     }
+    ],
+    "cv_agp": [
+     {
+      "tp": "L-92",
+      "value": 1850900,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "L-44",
+      "value": 1068100,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "L-3",
+      "value": 1616800,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "R+1",
+      "value": 1559000,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "R+45",
+      "value": 3046500,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "R+82",
+      "value": 3249500,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "R+194",
+      "value": 2912600,
+      "min": null,
+      "max": null
+     }
+    ],
+    "cv_crp": [
+     {
+      "tp": "L-92",
+      "value": 75749000,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "L-44",
+      "value": 9383100,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "L-3",
+      "value": 42838000,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "R+1",
+      "value": 83617000,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "R+45",
+      "value": 39190000,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "R+82",
+      "value": 12680000,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "R+194",
+      "value": 9379400,
+      "min": null,
+      "max": null
+     }
+    ],
+    "cv_fetuin_a36": [
+     {
+      "tp": "L-92",
+      "value": 357755.04,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "L-44",
+      "value": 188579.51,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "L-3",
+      "value": 373933.42,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "R+1",
+      "value": 334021.3,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "R+45",
+      "value": 271898.71,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "R+82",
+      "value": 316530.95,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "R+194",
+      "value": 295881.1,
+      "min": null,
+      "max": null
+     }
+    ],
+    "cv_fibrinogen": [
+     {
+      "tp": "L-92",
+      "value": 4153.93,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "L-44",
+      "value": 3723.84,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "L-3",
+      "value": 4609.49,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "R+1",
+      "value": 4531.17,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "R+45",
+      "value": 4491.95,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "R+82",
+      "value": 4447.08,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "R+194",
+      "value": 4334.63,
+      "min": null,
+      "max": null
+     }
+    ],
+    "cv_haptoglobin": [
+     {
+      "tp": "L-92",
+      "value": 17907000,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "L-44",
+      "value": 203473.61,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "L-3",
+      "value": 6263200,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "R+1",
+      "value": 5442300,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "R+45",
+      "value": 14476000,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "R+82",
+      "value": 11995000,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "R+194",
+      "value": 2571500,
+      "min": null,
+      "max": null
+     }
+    ],
+    "cv_l_selectin": [
+     {
+      "tp": "L-92",
+      "value": 1152700,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "L-44",
+      "value": 847821.61,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "L-3",
+      "value": 1128100,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "R+1",
+      "value": 1056400,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "R+45",
+      "value": 1317500,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "R+82",
+      "value": 1058100,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "R+194",
+      "value": 1398200,
+      "min": null,
+      "max": null
+     }
+    ],
+    "cv_pf4": [
+     {
+      "tp": "L-92",
+      "value": 21999.42,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "L-44",
+      "value": 2371.07,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "L-3",
+      "value": 26633.16,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "R+1",
+      "value": 28157.23,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "R+45",
+      "value": 25381.08,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "R+82",
+      "value": 21375.52,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "R+194",
+      "value": 18173.95,
+      "min": null,
+      "max": null
+     }
+    ],
+    "cv_sap": [
+     {
+      "tp": "L-92",
+      "value": 16583000,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "L-44",
+      "value": 5319800,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "L-3",
+      "value": 18242000,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "R+1",
+      "value": 16745000,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "R+45",
+      "value": 13993000,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "R+82",
+      "value": 13595000,
+      "min": null,
+      "max": null
+     },
+     {
+      "tp": "R+194",
+      "value": 12038000,
+      "min": null,
+      "max": null
+     }
+    ]
+   }
+  }
+ }
+}

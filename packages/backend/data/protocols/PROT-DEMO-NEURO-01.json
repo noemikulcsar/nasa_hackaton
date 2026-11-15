@@ -1,0 +1,47 @@
+{
+  "id": "PROT-DEMO-NEURO-01",
+  "title": "Short sleep, high fatigue or poor concentration",
+  "version": "0.2-demo",
+  "date": "2026-11-14",
+  "source": "CrewCare team, FICTIONAL document created for the NASA Space Apps 2026 demonstration. Not from a clinical source.",
+  "status": "demo-fictiv",
+  "approval": {
+    "approvedForMission": false,
+    "approvedBy": "—",
+    "note": "FICTIONAL PROTOCOL, NOT APPROVED. Used only to demonstrate the application workflow. Not for medical decisions."
+  },
+  "regions": [
+    "head"
+  ],
+  "keywords": [
+    "sleep",
+    "fatigue",
+    "tired",
+    "concentration",
+    "dizziness",
+    "headache",
+    "stress",
+    "isolation",
+    "head",
+    "vision"
+  ],
+  "summary": "Documenting and adjusting the schedule when sleep drops below the usual level or reported fatigue rises.",
+  "sections": [
+    {
+      "id": "1",
+      "heading": "When it applies",
+      "body": "Rules R-SLEEP-BELOW-USUAL or R-FATIGUE-ABOVE-USUAL are active, or poor concentration, headache or dizziness is reported."
+    },
+    {
+      "id": "2",
+      "heading": "Steps (fictional)",
+      "body": "1. Confirm the daily log entries with the crew member.\n2. Check noise, light and temperature in the crew quarters.\n3. Suggest to the commander moving critical tasks that need full concentration.\n4. Tell the CMO if the situation lasts more than 3 days or new symptoms appear."
+    },
+    {
+      "id": "3",
+      "heading": "Support",
+      "body": "The crew member can request a private conference with the behavioral health team on the ground at the next communication window."
+    }
+  ],
+  "medication": null
+}
